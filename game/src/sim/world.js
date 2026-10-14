@@ -121,6 +121,10 @@ export class World {
     return zones[this.zoneIndex];
   }
 
+  diffScale(value) {
+    return 1 + (value - 1) * (0.5 + 0.125 * this.zoneIndex);
+  }
+
   emit(type, a, b, c, d) {
     this.fx(type, a, b, c, d);
   }
@@ -351,6 +355,11 @@ export class World {
     enemy.hopZ = 0;
     enemy.summonT = 0;
     enemy.noSeparate = false;
+    enemy.flying = false;
+    enemy.moving = false;
+    enemy.silent = false;
+    enemy.killSlot = -1;
+    enemy.bleedAcc = 0;
     enemy.armor = 0;
     enemy.mass = 1;
     enemy.lastHitSlot = -1;
@@ -373,9 +382,9 @@ export class World {
     enemy.x = x;
     enemy.y = y;
     enemy.r = def.radius;
-    enemy.maxHp = enemy.hp = Math.max(1, Math.round(def.hp * zone.hp * ramp * this.diff.hp * (options.hpMult || 1)));
+    enemy.maxHp = enemy.hp = Math.max(1, Math.round(def.hp * zone.hp * ramp * this.diffScale(this.diff.hp) * (options.hpMult || 1)));
     enemy.speed = def.speed * this.diff.speed * (0.92 + this.rng.next() * 0.16);
-    enemy.dmg = Math.round(def.dmg * zone.dmg * this.diff.dmg);
+    enemy.dmg = Math.round(def.dmg * zone.dmg * this.diffScale(this.diff.dmg));
     enemy.xp = def.xp;
     enemy.mass = def.mass || 1;
     enemy.armor = def.armor || 0;
@@ -407,9 +416,9 @@ export class World {
     enemy.x = position.x;
     enemy.y = position.y;
     enemy.r = def.radius;
-    enemy.maxHp = enemy.hp = Math.round(def.hp * this.diff.eliteHp);
+    enemy.maxHp = enemy.hp = Math.round(def.hp * this.diffScale(this.diff.eliteHp));
     enemy.speed = def.speed * this.diff.speed;
-    enemy.dmg = Math.round(def.dmg * this.diff.dmg);
+    enemy.dmg = Math.round(def.dmg * this.diffScale(this.diff.dmg));
     enemy.xp = def.xp;
     enemy.mass = def.mass || 6;
     enemy.summonT = 4;

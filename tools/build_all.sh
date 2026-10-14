@@ -8,6 +8,7 @@ root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$root"
 echo "==> art"
 python3 tools/build_art.py
+node tools/check_sprites.mjs
 echo "==> launcher icons"
 python3 tools/build_icons.py
 echo "==> audio"

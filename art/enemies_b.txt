@@ -1,7 +1,9 @@
 # Enemies B: zone 4 (crypt) and zone 5 (volcanic abyss) + elites. All face right, 2-frame cycles.
 
+# ---------------------------------------------------------------- ZONE 4: Cripta Assombrada (purple-gray stone ground, light bones + bright accents)
+
 sprite en_skeleton
-keys: b=gray1 g=gray2 G=gray3
+keys: b=gray1 g=gray2 G=gray3 p=pink2
 frame
 ...WWbbbb...
 ..bWWbbbbb..
@@ -9,12 +11,12 @@ frame
 bWbkkkbbkkkg
 bbbkWkbbkWkg
 bbbkkkbbkkkg
-.bbbbbbbbbg.
+.bpbbbGGbpg.
 ..bkbkbkbg..
 ...gggggg...
 ..b.bbbg.b..
-..b.GGGG.b..
-..g.bbbg.g..
+..g.GGGG.b..
+....bbbg.g..
 ...bb..bb...
 ...bb...bbb.
 ...bbb......
@@ -25,47 +27,47 @@ frame
 bWbkkkbbkkkg
 bbbkWkbbkWkg
 bbbkkkbbkkkg
-.bbbbbbbbbg.
+.bpbbbGGbpg.
 ..bkbkbkbg..
 ...gggggg...
 ..b.bbbg.b..
-..b.GGGG.b..
-..g.bbbg.g..
+..b.GGGG.g..
+..g.bbbg....
 ...bb..bb...
 ...bbb.bb...
 .......bbb..
 end
 
 sprite en_ghost
-keys: g=gray1 G=gray2 p=pink2
+keys: g=gray1 p=pink2
 frame
 ...WWWWWW...
 ..WWWWWWWW..
 .WWWWWWWWWg.
-WWWWkkWWkkWg
-WWWWkkWWkkWg
-WWWWkkWWkkWg
-WWppWWWWWWpg
-WWWWWWkkWWWg
-WWWWWWkkWWWg
+.WWWkkWWkkg.
+.WWWkkWWkkgW
+.WWWkkWWkkgW
+.WppWWWWWWp.
+WWWWWWkkWWg.
+WWWWWWkkWWg.
 WWWWWWWWWWWg
 WWWWWWWWWWWg
-WWWWWWWWWWgg
-.WW..WW..Wg.
+WWg..WWWg..g
+Wg....Wg....
 frame
 ...WWWWWW...
 ..WWWWWWWW..
 .WWWWWWWWWg.
-WWWWkkWWkkWg
-WWWWkkWWkkWg
-WWWWkkWWkkWg
-WWppWWWWWWpg
-WWWWWWkkWWWg
-WWWWWWkkWWWg
+.WWWkkWWkkg.
+WWWWkkWWkkg.
+WWWWkkWWkkg.
+.WppWWWWWWp.
+.WWWWWkkWWgW
+.WWWWWkkWWgW
 WWWWWWWWWWWg
 WWWWWWWWWWWg
-WWWWWWWWWWgg
-W..WW..WW..g
+..WWWg..WWWg
+...Wg....Wg.
 end
 
 sprite en_zombie
@@ -80,14 +82,15 @@ frame
 .gpkkggpkkkG..
 .ggggggggGGG..
 ..gkWkWkWkGG..
-...gkgkgGH....
-..ccccccGGGGGG
-.CcccgcccggggG
-.CccccccGGGGGG
+...gggggGH....
+..ccccccGGGkGG
+.CcccgcccggkgG
+.CccccccGGGkGG
 .cCcCcCc......
 ..PPP.PPP.....
 ..GGG.GGGG....
 frame
+..............
 ...D.D.D......
 ...dDdDDd.....
 ..lggggggG....
@@ -97,17 +100,16 @@ frame
 .gpkkggpkkkG..
 .ggggggggGGG..
 ..gkWkWkWkGG..
-...gkgkgGH....
-..ccccccGGGGGG
-.CcccgcccggggG
-.CccccccGGGGGG
+..cgggggGHGkGG
+.CcccgcccggkgG
+.CccccccGGGkGG
 .cCcCcCc......
 ..PPP..PPP....
 .GGGG..GGG....
 end
 
 sprite en_pumpkin
-keys: o=orange3 l=orange2 O=orange4 d=orange5 y=yellow2 Y=yellow3 g=green4 e=green3
+keys: o=orange3 l=orange2 O=orange4 d=orange5 y=yellow2 g=green4 e=green3
 frame
 .......eg....
 ......eggg...
@@ -121,8 +123,9 @@ ooOoyoyoyoyOO
 .OOoooooooOO.
 ...OOOOOOO...
 ....dd..dd...
-...ddd..dd...
+....ddd.dd...
 frame
+.............
 .......eg....
 ......eggg...
 ...llooooo...
@@ -134,25 +137,24 @@ ooOoyyyyyyyOO
 ooOoyoyoyoyOO
 .OOoooooooOO.
 ...OOOOOOO...
-....dd..dd...
 ....dd..ddd..
 end
 
 sprite en_archer
-keys: b=gray1 g=gray2 G=gray3 r=brown3 R=brown4 h=red3 H=red4
+keys: b=gray1 g=gray2 G=gray3 r=brown3 R=brown4 h=red3 H=red4 p=pink2
 frame
 ..bWWb.......
 .bWWbbg......
 bbkkbkkg.....
 bbkkbkkg.wrr.
 bbkkbkkg.w.rr
-.bbbbbg..w.rR
+.pbbbpg..w.rR
 ..bkbg...w.rR
-...ggg...w.rR
-..hhhHbbbbbgR
-.hHbbbg..w.rR
-hH.GGGG..w.rR
-...bbbg..w.rR
+.hhhhhH..w.rR
+.hHbbbgbbbbgR
+hhHGGGGgggggR
+hHHbbbg..w.rR
+hH.bbbg..w.rR
 ...bb.bb.w.rr
 ...bb.bb.wrr.
 ...bbb.......
@@ -162,30 +164,32 @@ frame
 bbkkbkkg.....
 bbkkbkkg.wrr.
 bbkkbkkg.w.rr
-.bbbbbg..w.rR
+.pbbbpg..w.rR
 ..bkbg...w.rR
-...ggg...w.rR
-.hhhHHbbbbbgR
-hH.bbbg..w.rR
-...GGGG..w.rR
+HhhhhhH..w.rR
+.hHbbbgbbbbgR
+hhHGGGGgggggR
+.hHbbbg..w.rR
 ...bbbg..w.rR
 ...bb.bb.w.rr
 ...bb.bb.wrr.
 ......bbb....
 end
 
+# ---------------------------------------------------------------- ZONE 5: Abismo Vulcanico (dark basalt + lava, warm brights, purples and whites)
+
 sprite en_imp
-keys: r=red3 l=red2 R=red4 p=purple3 P=purple4 n=pink2
+keys: r=red3 l=red2 R=red4 p=purple3 P=purple4 q=purple2 n=pink2
 frame
-p..w.....w..p
+q..w.....w..q
 pp.ww...ww.pp
-ppp.lrrrr.ppp
-.PPllrrrrrPP.
-.PlrWkrrWkrP.
-..lrkkrrkkr..
-..rnrrrrrnr..
-..rrrkkkkrr..
-...rrrrrRR...
+ppp.llrrr.ppp
+.PPlRRrrRRPP.
+.PlrWkrrWkRP.
+..lrkkrrkkR..
+..rnrrrrrnR..
+..rrrkWWkRR..
+...rrrkkrR...
 ...RRRRRR....
 ..RR.........
 .RR..........
@@ -193,13 +197,13 @@ R............
 frame
 ...w.....w...
 ...ww...ww...
-....lrrrr....
-...llrrrrr...
-..lrWkrrWkr..
-.PlrkkrrkkrP.
-pPrnrrrrrnrPp
-pPrrrkkkkrrPp
-ppPrrrrrRRPpp
+....llrrr....
+...lRRrrRR...
+..lrWkrrWkR..
+.PlrkkrrkkRP.
+pPrnrrrrrnRPp
+pPrrrkWWkRRPp
+ppPrrrkkrRPpp
 R..RRRRRR....
 .RR..........
 .............
@@ -207,13 +211,13 @@ R..RRRRRR....
 end
 
 sprite en_magmaslime
-keys: h=gray4 c=gray5 C=gray6 y=yellow2 Y=yellow3 l=orange2 o=orange3 O=orange4 r=red3 R=red4
+keys: h=gray4 c=gray5 C=gray6 y=yellow2 Y=yellow3 l=orange2 o=orange3 O=orange4 R=red4
 frame
-....hhccc....
+....hhcyc....
 ..hhccycccC..
-.hhcyccccyCC.
-hcyyccccyyCCC
-lYooooooooOOO
+.hhyccycccyC.
+hccycyoccycCC
+lYooYoooooYOO
 looWkoooWkoOO
 lookkoookkoOO
 looyooooooyOO
@@ -222,10 +226,10 @@ OOooooooooORR
 .RRRRRRRRRRR.
 frame
 .............
-....hhccc....
+....hhcyc....
 ..hhccycccC..
-.hhcyccccyCC.
-hcyyccccyyCCC
+.hhyccycccyC.
+hccycyoccycCC
 looWkoooWkoOO
 lookkoookkoOO
 looyooooooyOO
@@ -237,18 +241,18 @@ end
 sprite en_ember
 keys: r=red3 o=orange3 O=orange2 y=yellow3 Y=yellow2
 frame
-........
-....r...
-...rro..
-..rooOo.
+..r.....
+..rr....
+.roor...
+.rooOor.
 roWkyWkr
 rokkykkr
 .roYYor.
 ..rrrr..
 frame
-...r....
-..rro...
-..rooo..
+.....r..
+....rr..
+...roor.
 .rooOor.
 roWkyWkr
 rokkykkr
@@ -260,164 +264,166 @@ sprite en_knight
 keys: h=gray4 c=gray5 C=gray6 s=gray3 p=purple3 P=purple4 q=purple2 r=red2 R=red1 y=yellow3
 frame
 ....qp..........
-....qpshhc......
-.....shhhhc.....
+...qpshhhhc.....
 ....shhhhhhc....
+...shhhhhhhhc...
 ...shhhhhhhhc...
 ...hkkkkkkkkc...
 ...hkrrRRrrkc...
+...hhhhhhhhhc...
 ....hhhhhhhc....
-.sshhccccc.ssC..
-.shhhPccccsPPPC.
-.hcccccccsPpPPPC
-..hccccccsPPyyPC
-..cPPyPPcsPPPPPC
-...hcC.hcCcCCCC.
-...hcC.hcC.cCC..
-...hcC.hCCC.....
-..hCCC..........
+.sshhccccc.ssh..
+.shhhPhhccsPPPh.
+.hcccchccsPpPPPh
+..hcchcccsPyyPPh
+..cPPyPPcsPyyPPh
+..hcC..hcCsPPPh.
+..hCCC.hCCChhh..
+..CCCC..........
 frame
+................
 ....qp..........
-...qpshhc.......
-.....shhhhc.....
+...qpshhhhc.....
 ....shhhhhhc....
+...shhhhhhhhc...
 ...shhhhhhhhc...
 ...hkkkkkkkkc...
 ...hkrrRRrrkc...
+...hhhhhhhhhc...
 ....hhhhhhhc....
-.sshhccccc.ssC..
-.shhhPccccsPPPC.
-.hcccccccsPpPPPC
-..hccccccsPPyyPC
-..cPPyPPcsPPPPPC
-...hcC.hcCcCCCC.
-...hcC.hcC.cCC..
-..hCCC.hcC......
-.......hCCC.....
+.sshhccccc.ssh..
+.shhhPhhccsPPPh.
+.hcccchccsPpPPPh
+..hcchcccsPyyPPh
+..cPPyPPcsPyyPPh
+..hCCC.hCCsPPPh.
+.......CCCChhh..
 end
 
 sprite en_salamander
-keys: o=orange3 l=orange2 q=orange4 b=orange1 y=yellow2 p=pink2 r=red3 O=orange2 Y=yellow2
-frame
-.r..............
-rOr.............
-rYOr.......lq...
-.q.......lloolq.
-.q..llllylooWkoq
-.llloyooolookkoq
-.lolooooolpooooq
-.qqqqooooqoookk.
-...qqbbbbbqqqq..
-...qq.qq..qq....
+keys: o=orange3 l=orange2 q=orange4 b=orange1 y=yellow2 p=pink2 r=red3
 frame
 ..r.............
-.rOr............
-rOYr.......lq...
-.q.......lloolq.
-.q..llllylooWkoq
-.llloyooolookkoq
-.lolooooolpooooq
-.qqqqooooqoookk.
-...qqbbbbbqqqq..
-....qq.qqqq.....
+.rlr............
+rlylr......lq...
+rlylr.r.rlloolq.
+.lq.lllllooWkooq
+looloyoylookkooq
+qoolooooqppooooq
+.qoqqooooqqookk.
+..qqlobbbloqq...
+..qqooo..ooo....
+frame
+.r..............
+.rlr............
+rlylr......lq...
+rlylr.r.rlloolq.
+.lq.lllllooWkooq
+looloyoylookkooq
+qoolooooqppooooq
+.qoqqooooqqookk.
+..qlobbbbblqq...
+...oooqqqqooo...
 end
 
 sprite en_eye
 keys: g=gray1 G=gray2 p=purple3 P=purple4 Q=purple5 q=purple2
 frame
 .............
-p...........p
-pp..WWWWW..pp
-ppQWWWWWWWQpp
-.QWpWWpppWWQ.
-..WpWpWWWkW..
-..WWWpppkkW..
-..WWWPppkkW..
-..WWWWPPPWW..
-...WWWWWgg...
-....gggGG....
+Q...........Q
+pQ...WWg..ppQ
+pPQ.WWWWg.pPQ
+pPPWpWqqpgPPQ
+QPppWqpWkkgPQ
+.QWWWppkkkGQ.
+..gWpPpkkkG..
+...pWWPPPG...
+....gWWWG....
+.....gGG.....
 .............
 .............
 frame
 .............
 .............
-....pPPPP....
-...pPPPPPP...
-..pPPPPPPPP..
-..kkkkkkkkk..
-..WWWpppkkW..
-..WWWPppkkWQ.
-.QWWWWPPPWWQ.
-ppQWWWWWgg.pp
-pp..gggGG..pp
-p...........p
+.....ppp.....
+....pPPPp....
+...kkkkkkk...
+..WpWqpWkkg..
+.pWWWppkkkGQ.
+pPgWpPpkkkGPQ
+pPPpWWPPPGPPQ
+pPQ.gWWWG.pPQ
+pQ...gGG..QQQ
+Q...........Q
 .............
 end
 
+# ---------------------------------------------------------------- ELITES (mini-bosses, 2 frames each)
+
 sprite el_cursedpumpkin
-keys: o=orange3 l=orange2 O=orange4 d=orange5 D=brown5 y=yellow2 Y=yellow1 u=yellow3 h=purple4 c=purple5 C=purple6 b=purple3 B=purple4 z=yellow3 Z=yellow2 W=purple1 F=purple2 f=purple3 g=purple4
+keys: o=orange3 l=orange2 O=orange4 d=orange5 D=brown5 y=yellow2 Y=yellow1 u=yellow3 h=purple4 c=purple5 C=purple6 b=purple3 X=purple1 F=purple2
 frame
-f..........hccccCcccccC..f
-F.........hccccC.CCCccC..F
-Ff........hccccC....CCcCfF
-FFg......hcccccC......hCFF
-FFf......hcccccC......CCFF
-FWFf.....hccccccC.....fCWF
-fFWFg....hccccccC....gFWFf
-fFWFfg..fbbbZzbbbb..gfFWFf
-gFWWFhhhhhhhzzCBBBg.fFWWFg
-gfFhhcccccccccchhhhCfFWFfg
-.fFCCCcccccccccccccchCWFf.
-.fFWWlCCCCCCCCCccccCCCWFf.
-.flldloOOyyOoooCCCCOOllOf.
-glodloOOyYYyOoOOyYYyOOooOg
-glodloOyyyyyyoOyyyyyyOooOg
-lodlooOuuuuuuoOuuuuuuoOooO
-lodloOOOoOOOOOOOoOOOooOooO
-lodloOyyloyyyyyyloyyooOooO
-lodloOyyloyYyyYyloyyooOooO
-OodOoOuyyyYYuuYYyyyuooOooO
-.lodloOuyyyyloyyyyuooOooO.
-.OodOooOuuuulouuuuoooOooO.
-..OodOOOODOooooOOOOODooO..
+h..........hccccCcccccC...
+h.........hccccC.CCCccC..h
+hh........hccccC....CCcChh
+bh...h...hcccccC......hChb
+bbh..hh..hcccccC....h.CCbb
+hbbh.hh..hccccccC..hh.hCbh
+hbFbhbh..hccccccC..hh.hbbh
+hbFFbbh.hbbbyubbbb.hbhbFbh
+hbFXFhhhhhhhuuChhhhbFbFFbh
+hbFhhcccccccccchhhhCXFXFbh
+.hbCCCcccccccccccccchCFbh.
+.hbFXlCCCCCCCCCccccCCCFbh.
+.hlldlooOOOOoooCCCCOOllOh.
+hlodlooOOyyOOooOOyyOOOooOh
+hlodloOOyyyyOOOOyyyyOOooOh
+lodlooOuuuuuulOuuuuuulOooO
+lodloOOOOOOOOOOOOOOOOlOooO
+lodloOyyloyyyyyyloyyOoOooO
+lodloOyyloyYyyYyloyyOoOooO
+OodOoOuyyyYYuuYYyyyuloOooO
+.lodlOOuyyyyloyyyyullOooO.
+.OodOoOOuuuulouuuulloOooO.
+..OodOOOODOllOOOOOOODooO..
 ...OOOddddDOOOODdddddDO...
 .....DddddD.....DDDDD.....
 ......DDDD................
 frame
-..........hhcccccccccC....
-...f......hccccCCCccccC...
-...Fg....hccccC...CCCcC...
-..gFf....hcccccC....gCC...
-..gFFgg..hcccccC....gFCg..
-..fWFgF..hccccccC..FfFCf..
-.gFWFgFf.hccccccC.gWfFWfg.
-.fFWFgFFgbbbZzbbbbFFfFWFf.
-gfFWFhhhhhhhzzCBBBWFfFWFfg
-gFWhhcccccccccchhhhCfFWFfg
-fFWCCCcccccccccccccchCWWFg
-fFWWFlCCCCCCCCCccccCCCWWFf
-fFlldloOOyyOoooCCCCOOllOFf
-glodloOOyYYyOoOOyYYyOOooOg
-glodloOyyyyyyoOyyyyyyOooOg
-lodlooOuuuuuuoOuuuuuuoOooO
-lodloOOOoOOOOOOOoOOOooOooO
-lodloOyyloyyyyyyloyyooOooO
-lodloOyyloyYyyYyloyyooOooO
-OodOoOuyyyYYuuYYyyyuooOooO
-.lodloOuyyyyloyyyyuooOooO.
-.OodOooOuuuulouuuuoooOooO.
-..OodOOOOODooooOOOODOooO..
+..........hhcccccccccCh...
+..........hccccCCCccccC...
+...h.....hccccC...CCCcC...
+..hbh....hcccccC.....CCh..
+..hbh....hcccccC.....hCh..
+..hbh...hhccccccC...hbCh..
+.hbbh...hhccccccCh..hbFbh.
+.hbFbh..hbbbyubbbbhhbFFbh.
+hbFXFhhhhhhhuuChhhbbFXXFbh
+hbFhhcccccccccchhhhCXXXFbh
+hbFCCCcccccccccccccchCXFbh
+hbFXXlCCCCCCCCCccccCCCXFbh
+hblldlooOOOOoooCCCCOOllObh
+hlodlooOOyyOOooOOyyOOOooOh
+hlodloOOyyyyOOOOyyyyOOooOh
+lodlooOuuuuuulOuuuuuulOooO
+lodloOOOOOOOOOOOOOOOOlOooO
+lodloOyyloyyyyyyloyyOoOooO
+lodloOyyloyYyyYyloyyOoOooO
+OodOoOuyyyYYuuYYyyyuloOooO
+.lodlOOuyyyyloyyyyullOooO.
+.OodOoOOuuuulouuuulloOooO.
+..OodOOOOODllOOOOOODOooO..
 ...ODDddddDDOOOOddddODO...
 ......DDDD.....DddddDD....
 ................DDDD......
 end
 
 sprite el_magmagolem
-keys: c=gray5 h=gray4 C=gray6 s=gray3 y=yellow2 W=yellow1 o=orange3 r=red3 R=red4
+keys: c=gray5 h=gray4 C=gray6 s=gray3 y=yellow2 o=orange3 r=red3
 frame
 ............................
 ...........shohhC...........
-..........scccoccC..........
+..........scccyccC..........
 .........sCCCCCCCCC.........
 .........hcWyycWyyC.........
 .........hcyyycyyyC.........
@@ -425,17 +431,17 @@ frame
 ....sC....CccrrrrC....sC....
 ...sccC...sCCCCCCC...sccC...
 ..socccC.sccccccccC.scccoC..
-.sccocccsocccccccccCcccoccC.
-.CccoccchoccrrrrcccCccccocC.
+.sccycccsocccccccccCcccyccC.
+.CccoccchyccrrrrcccCccccocC.
 ..CocccChooroyoorccCCccsoC..
 ...shCC.hccooyyorccC.CscccC.
 ..scccC.hccrooyooocC..hcccC.
 ..hcccC.hcccrorrccoC..CshCC.
-..hcccC.hcccocccccoC..scccC.
+..hcccC.hcccycccccyC..scccC.
 ..shhCC.CcccocccccoC.sccoccC
-.sccccC.hCCCCCCCCCCC.hccoccC
+.sccccC.hCCCCCCCCCCC.hccyccC
 sccocccCCcCCCCCCCCccCCcocccC
-hcccoccChhhhC...hcocC.CcccC.
+hcccyccChhhhC...hcocC.CcccC.
 CcccoccCcccccC..hCoCC..CCC..
 .CccccCccccccC..CoccC.......
 ..CCCCCccccccC.shhhhC.......
@@ -446,7 +452,7 @@ CcccoccCcccccC..hCoCC..CCC..
 frame
 ............................
 ...........shohhC...........
-..........scccoccC..........
+..........scccyccC..........
 .........sCCCCCCCCC.........
 .........hcWyycWyyC.........
 .........hcyyycyyyC.........
@@ -454,17 +460,17 @@ frame
 ....sC....CccrrrrC....sC....
 ...sccC...sCCCCCCC...sccC...
 ..socccC.sccccccccC.scccoC..
-.sccocccsocccccccccCcccoccC.
-.CccoccchoccrrrrcccCccccocC.
+.sccycccsocccccccccCcccyccC.
+.CccoccchyccrrrrcccCccccocC.
 ..CocccChooroyoorccCCcccoC..
 ...shCC.hccooyyorccC.CcshC..
 ..scccC.hccrooyooocC..scccC.
 ..shhCC.hcccrorrccoCC.hcccC.
-.sccccC.hcccocccccoCcChcccC.
+.sccccC.hcccycccccyCcChcccC.
 sccocccCCcccocccccoCcCCshCC.
-hcccoccCsCCCCCCCCCCCCCscccC.
+hcccyccCsCCCCCCCCCCCCCscccC.
 CcccoccCcoCCCCCCCCcccsccoccC
-.CccccChcocC....shhhhhccoccC
+.CccccChcocC....shhhhhccyccC
 ..CCCC.hCoCC...scccccCcocccC
 .......CcccC...hccccccCcccC.
 ......shhhhC...CccccccCCCC..

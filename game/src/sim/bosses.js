@@ -16,12 +16,13 @@ export function spawnBoss(world, id) {
   enemy.sprite = def.sprite;
   enemy.behavior = 'boss';
   enemy.boss = true;
+  enemy.flying = !!def.flying;
   enemy.x = (arena.x0 + arena.x1) / 2;
   enemy.y = arena.y0 + 60;
   enemy.r = def.radius;
-  enemy.maxHp = enemy.hp = Math.round(def.hp * world.diff.eliteHp);
+  enemy.maxHp = enemy.hp = Math.round(def.hp * world.diffScale(world.diff.eliteHp));
   enemy.speed = def.speed * world.diff.speed;
-  enemy.dmg = Math.round(def.dmg * world.diff.dmg);
+  enemy.dmg = Math.round(def.dmg * world.diffScale(world.diff.dmg));
   enemy.mass = 100;
   enemy.spawnT = 1.2;
   enemy.noSeparate = true;

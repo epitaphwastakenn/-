@@ -409,9 +409,7 @@ export class App {
     if (clear >= 0) {
       world.events.splice(clear, 1);
       campHeal(world);
-      applyBlessing(world, bot.chooseBlessing(rollBlessings(world)));
-      world.advanceZone();
-      this.onZoneStart(world.zoneIndex);
+      this.chooseBlessing(bot.chooseBlessing(rollBlessings(world)));
     }
   }
 
@@ -834,6 +832,7 @@ export class App {
       case 'bossDeath':
         this.sfx('bossDie');
         this.buzz(400);
+        this.toast(t('toast.bossDown', { name: tr(a.bossDef.name) }), 'big', 2600);
         this.audio.playMusic(world.zone.music, 2);
         break;
       case 'evolve':

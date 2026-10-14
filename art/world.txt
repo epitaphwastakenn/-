@@ -1,6 +1,9 @@
-# Purrvivors world art: ground tiles, flat decor, breakable props, boss-arena post
+# Purrvivors world art: ground tiles, flat decor, breakable props (anchor=cx,8 so they stand on the game shadow), boss-arena post
 
 # ---------------- GROUND TILES (16x16, outline=0, seamless; tile _0 is the cleanest and used most)
+# Seamless rule: organic tiles keep a 1px border of pure base colour; gr_crypt_* share identical borders and the same
+# flagstone joint skeleton (mortar rows 0 and 9, vertical joints at col 0 / col 6), so any mix of variants tiles cleanly.
+# gr_abyss_*: only _1 carries bright lava; _2 and _3 are cool red cracks so the glow stays sparse.
 sprite gr_meadow_0 outline=0
 keys: g=green3 G=green4 l=green2
 frame
@@ -15,8 +18,8 @@ gggggggggggggggg
 ggggggglgggggggg
 gggggggGgggggggg
 gggggggggggggggg
-gglggggggggggggg
-ggGgggggggggglgg
+gggggggggggggggg
+ggggggggggggglgg
 gggggggggggggGgg
 gggggggggggggggg
 gggggggggggggggg
@@ -93,10 +96,10 @@ gggggggggggggggg
 gggggmmggggggmmg
 gggggggggggggggg
 gggggggggggggggg
+ghgggggggggggggg
+ggggggggghgggggg
 gggggggggggggggg
 gggggggggggggggg
-ggggggggggggghgg
-ggggggggmmgggggg
 gggggggggggggggg
 gggmmggggggggggg
 gggggggggggggggg
@@ -170,21 +173,21 @@ gggggggggggggggg
 end
 
 sprite gr_peaks_0 outline=0
-keys: s=blue1 w=white b=blue2
+keys: s=blue1 w=white b=blue2 g=gray1
 frame
 ssssssssssssssss
 ssssssssssssssss
-ssssssssssssbsss
+ssssssssssssssss
 ssswwwssssssssss
 ssssbbbsssssssss
 ssssssssssssssss
 ssssssssssssssss
 sssssssssswwssss
-sssssssssssbssss
+sssssssssssgssss
 ssssssssssssssss
 ssssssssssssssss
 ssssswwwssssssss
-ssssssbbbsssssss
+ssssssgggsssssss
 ssssssssssssssss
 ssssssssssssssss
 ssssssssssssssss
@@ -219,10 +222,10 @@ ssssssssssssssss
 sssssssssssswsss
 ssssssssssssssss
 ssssssssssssssss
-ssssssbbbbssssss
-sssssbwwbbbsssss
-sssssbbbbbbsssss
-ssssssbbbbssssss
+ssssssssssssssss
+sssssswwwwssssss
+ssssswwwwwwbssss
+sssssbbbbbbbssss
 ssssssssssssssss
 ssssssssssssssss
 ssssssssssssssss
@@ -233,13 +236,13 @@ ssssssssssssssss
 end
 
 sprite gr_peaks_3 outline=0
-keys: s=blue1 w=white b=blue2 c=blue3
+keys: s=blue1 w=white b=blue2 g=gray1
 frame
 ssssssssssssssss
 ssssssssssssssss
 ssssssssssssssss
 ssssssssswswssss
-ssswwwsssscsssss
+ssswwwssssbsssss
 ssssbbbsswswssss
 ssssssssssssssss
 ssssssssssssssss
@@ -247,7 +250,7 @@ ssssssssssssssss
 ssssssssssssssss
 ssssssssssssssss
 sssssssswwwsssss
-sssssssssbbbssss
+sssssssssgggssss
 ssssssssssssssss
 ssssssssssssssss
 ssssssssssssssss
@@ -362,62 +365,62 @@ sprite gr_abyss_1 outline=0
 keys: g=gray6 r=red5 b=brown5 h=gray5 o=orange3 y=yellow3
 frame
 gggggggggggggggg
-gggggggggggggggg
+ggggggggggggghgg
 gbbgghgggggggggg
 gggggggggggggggg
 ggggggggggorgggg
-ggggggggyogggggg
+ggggggggoogggggg
 ggggggoyrrgggghg
-ggggyyrogggggggg
-ggroorgrorgggggg
-gggrgggggggggggg
+ggggyorrgggggggg
+ggroorgggggggggg
+gggrggggggghgggg
 gggggggggggggggg
+ggggggghgggggggg
 gggggggggggggggg
-gggggggggggggggg
-gggghggggggggggg
-ggggggggbbgggggg
+ggggggggggghhhgg
+ghgggbbgggghgggg
 gggggggggggggggg
 end
 
 sprite gr_abyss_2 outline=0
-keys: g=gray6 r=red5 b=brown5 h=gray5 o=orange3 y=yellow3
+keys: g=gray6 r=red5 b=brown5 h=gray5 R=red4
 frame
 gggggggggggggggg
-gggggggggggggghg
-gghhhggggggggggg
-gghggggggggggggg
-gggggggggryggggg
-ggggggggggorgggg
+gggggghggggggggg
+gggggggggggghhhg
+gggggggggggghggg
+gggrRggggggggggg
+gggggrrggggggggg
+ggggggrggggggggg
+gggggrgRrggggggg
+ggggrggggrgggghg
+gggggggggggggggg
+ghgggggggggggggg
+ggggggghggghgggg
 gggggggggggggggg
 gggggggggggggggg
-ggggrggggggggghg
-gggggoyggggggggg
-ggggggorgggggggg
-ggggggggggggoggg
-gggggggggggggggg
-ggbbgggggggggggg
-ggggggggghgggggg
+ggghgggggbbggggg
 gggggggggggggggg
 end
 
 sprite gr_abyss_3 outline=0
-keys: g=gray6 r=red5 b=brown5 h=gray5 o=orange3 R=red4
+keys: g=gray6 r=red5 b=brown5 h=gray5 R=red4
 frame
 gggggggggggggggg
 gggggggggggggggg
-ghgggggghgggbbgg
+ggggggghgggggggg
+gbbgggggggggghgg
 gggggggggggggggg
-ggggRRgggggggggg
-gggggRrggggggggg
-gggggggrRggggggg
-gggggggorggggghg
-gghggggggrgggggg
+gggghggggggggggg
+gggggggggRrggggg
+ggggggggrggggghg
+ggggggRrgggggggg
+gggggrgggggggggg
 gggggggggggggggg
-gggggggggggggggg
-gggggggggggggggg
-gghhhggggggggghg
-gghgggggggbbgggg
-gggggggggggggggg
+gghggggggggggggg
+ggggggghgggggggg
+ggggggggggghhhgg
+ggggbbggggghgggg
 gggggggggggggggg
 end
 
@@ -426,7 +429,7 @@ sprite de_flower_0 outline=0
 keys: P=pink2 p=pink3 d=pink4 y=yellow3 Y=yellow2 s=green4 S=green5 l=green2
 frame
 ..PPp..
-.PPppp.
+..Ppp..
 PPpYppd
 Ppyyypd
 .ppypd.
@@ -514,14 +517,14 @@ t......
 end
 
 sprite de_leaf_1 outline=0
-keys: l=brown2 o=brown3 O=brown4 v=brown5
+keys: l=brown2 o=brown3 O=brown4
 frame
 ..l.l..
 .lolol.
 looooOO
-.oovoO.
-..ovO..
-...v...
+.ooOoO.
+..oOO..
+...O...
 end
 
 sprite de_mushroom outline=0
@@ -664,15 +667,15 @@ end
 sprite de_cobweb outline=0
 keys: g=gray3 G=gray2
 frame
-g..ggg..g
-.gg.g.gg.
-.ggggggg.
-g.g.G.g.g
-gggGGGggg
-g.g.G.g.g
-.ggggggg.
-.gg.g.gg.
-g..ggg..g
+g...g...g
+.g..g..g.
+..gg.gg..
+..g.g.g..
+gg.gGg.gg
+..g.g.g..
+..gg.gg..
+.g..g..g.
+g...g...g
 end
 
 sprite de_crack outline=0
@@ -741,7 +744,7 @@ brrrrbr
 end
 
 sprite de_ember outline=0
-keys: G=gray5 g=gray4 d=gray6 r=red4 o=orange3 y=yellow3 Y=yellow2
+keys: G=gray5 g=gray4 d=gray6 r=red4 o=orange3 Y=yellow2
 frame
 ..Y....
 .gGGG..
@@ -766,7 +769,7 @@ uuukkkk
 end
 
 # ---------------- PROPS (breakable, default ink outline)
-sprite prop_pot
+sprite prop_pot anchor=6,8
 keys: l=orange2 o=orange3 O=orange4 d=orange5 b=blue3 B=blue4 c=blue2 w=cream
 frame
 ..lllloooo..
@@ -785,7 +788,7 @@ llooooooooOd
 ..OOOOOOdd..
 end
 
-sprite prop_lantern
+sprite prop_lantern anchor=6,8
 keys: o=orange3 O=orange4 r=red3 R=red4 y=yellow3 Y=yellow2 w=cream t=brown3 T=brown4 d=brown5
 frame
 .....dd.....
@@ -804,7 +807,7 @@ frame
 ...dTTTTd...
 end
 
-sprite prop_snowcrate
+sprite prop_snowcrate anchor=6,8
 keys: W=white w=blue1 b=blue2 l=brown2 o=brown3 O=brown4 d=brown5
 frame
 ...WWWW.....
@@ -823,7 +826,7 @@ WwbWWbWWwbwb
 .dddddddddd.
 end
 
-sprite prop_coffin
+sprite prop_coffin anchor=5,8
 keys: l=brown2 o=brown3 O=brown4 d=brown5 w=cream
 frame
 ...loooO...
@@ -842,7 +845,7 @@ loowwwwwooO
 ...ddddd...
 end
 
-sprite prop_brazier
+sprite prop_brazier anchor=6,8
 keys: y=yellow2 Y=yellow3 o=orange3 r=red3 l=gray3 g=gray4 G=gray5 d=gray6
 frame
 .....y......
@@ -863,22 +866,22 @@ end
 
 # ---------------- ARENA
 sprite ar_post
-keys: W=white l=pink1 P=pink2 p=pink3 m=pink4 v=purple4 V=purple5 w=pink1 g=gray2 G=gray3 h=gray4
+keys: W=white l=pink1 P=pink2 p=pink3 m=pink4 n=pink5 M=purple3 v=purple4 V=purple5 g=gray2 G=gray3 h=gray4
 frame
 ....lW....
-...lPWm...
-..lPPWmv..
-.PPpWwmvV.
-.PPpWlmvV.
-.PPpWlmvV.
-.PpPWlpvV.
-.PpPWlpvV.
-.ppPWlpvV.
-.ppPWlmvV.
-.ppPllmvV.
-.pppPlmvV.
-..ppPPmV..
-..pppmVV..
+...PlWM...
+..PpWlMv..
+.PpmWlMvV.
+.PpmWlMvV.
+.PmmWlMvV.
+.PmmWlMvV.
+.pmmWlMvV.
+.pmmPlMvV.
+.pmmPlvvV.
+.pmmPPvvV.
+.pmmmPvVV.
+..mmmmvV..
+..mmnnVV..
 .gggggggg.
 GGGGGGGGGh
 end

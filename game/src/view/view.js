@@ -70,15 +70,16 @@ export class View {
   number(x, y, value, kind) {
     if (!this.showNumbers) return;
     let n;
-    if (this.numbers.length >= 70) {
+    if (kind === 'normal' && this.numbers.length > 30) return;
+    if (this.numbers.length >= 48) {
       n = this.numbers.shift();
     } else {
       n = this.numberPool.pop() || { x: 0, y: 0, text: '', life: 0, kind: '', vy: 0 };
     }
-    n.x = x + (Math.random() - 0.5) * 6;
-    n.y = y;
+    n.x = x + (Math.random() - 0.5) * 10;
+    n.y = y - Math.random() * 4;
     n.text = String(value);
-    n.life = 0.65;
+    n.life = kind === 'normal' ? 0.5 : 0.75;
     n.kind = kind;
     n.vy = -38;
     this.numbers.push(n);
@@ -184,11 +185,11 @@ export class View {
       if (p.kind === 'puddle') {
         const fade = Math.min(1, p.life * 2.5, p.age * 6);
         const s = (p.r * 2) / 32;
-        r.draw(this.frame('fx_puddle'), p.x, p.y, s, s * 0.75, 0, withAlpha(white, 0.9 * fade));
+        r.draw(this.frame('fx_puddle'), p.x, p.y, s, s * 0.75, 0, withAlpha(white, 0.5 * fade));
       } else if (p.kind === 'galaxy') {
         const fade = Math.min(1, p.life * 2.5, p.age * 6);
         const s = (p.r * 2) / 32;
-        r.draw(this.frame('fx_galaxy'), p.x, p.y, s, s * 0.8, p.rot, withAlpha(white, 0.95 * fade));
+        r.draw(this.frame('fx_galaxy'), p.x, p.y, s, s * 0.8, p.rot, withAlpha(white, 0.8 * fade));
         r.draw(this.frame('glow_64'), p.x, p.y, s * 0.8, s * 0.6, 0, withAlpha(hexColor('#a97ef0'), 0.5 * fade), 0, true);
       }
     }
@@ -596,7 +597,8 @@ export class View {
         color = withAlpha(hexColor('#ff9eb8'), alpha);
         scale = 0.85;
       } else {
-        color = withAlpha(white, alpha);
+        color = withAlpha(white, alpha * 0.9);
+        scale = 0.8;
       }
       const text = n.text;
       const advance = 5 * scale;

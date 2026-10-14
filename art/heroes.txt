@@ -1,4 +1,3 @@
-# Heroes: cats, facing right (flipped in code for left)
 sprite hero_bigode anchor=7,8
 keys: o=orange3 l=orange2 O=orange4 p=pink3 P=pink2 r=red3 R=red4
 frame

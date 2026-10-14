@@ -156,6 +156,6 @@ export const bosses = {
   kingGloop: { name: { pt: 'Rei Gosma', en: 'King Gloop' }, sprite: 'bo_kinggloop', hp: 2600, radius: 18, dmg: 12, speed: 30, xp: 120, gold: 30 },
   elderOak: { name: { pt: 'Ancião Carvalho', en: 'Elder Oak' }, sprite: 'bo_elderoak', hp: 14000, radius: 20, dmg: 20, speed: 18, xp: 260, gold: 45 },
   yeti: { name: { pt: 'Yeti Colossal', en: 'Colossal Yeti' }, sprite: 'bo_yeti', hp: 30000, radius: 20, dmg: 26, speed: 34, xp: 420, gold: 60 },
-  countRatula: { name: { pt: 'Conde Ratácula', en: 'Count Ratula' }, sprite: 'bo_ratula', hp: 56000, radius: 16, dmg: 28, speed: 40, xp: 620, gold: 80 },
+  countRatula: { name: { pt: 'Conde Ratácula', en: 'Count Ratula' }, sprite: 'bo_ratula', flying: true, hp: 56000, radius: 16, dmg: 28, speed: 40, xp: 620, gold: 80 },
   cerberus: { name: { pt: 'Cérbero', en: 'Cerberus' }, sprite: 'bo_cerberus', hp: 140000, radius: 26, dmg: 40, speed: 32, xp: 0, gold: 150 },
 };

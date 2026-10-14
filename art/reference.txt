@@ -1,4 +1,3 @@
-# Reference sprites that define the house style (other files should match these)
 sprite en_slime anchor=6,6
 keys: g=green3 G=green4 l=green2 p=pink2
 frame
@@ -34,46 +33,4 @@ llbbbB
 lbbbBB
 .bbBd.
 ..Bd..
-end
-
-sprite ic_claw_ref
-keys: c=cream o=orange2 O=orange4 p=pink3
-frame
-...........o....
-..........ow....
-....o....ow.....
-...ow...ow...o..
-..ow...ow...ow..
-.ow...ow...ow...
-ow...ow...ow....
-w...ow...ow.....
-...ow...ow......
-..ow...ow.......
-.ow...ow........
-ow...ow.........
-w...ow..........
-...ow...........
-...w............
-................
-end
-
-sprite gr_ref_0 outline=0
-keys: g=green3 G=green4 l=green2
-frame
-gggggggggggggggg
-gggggggggggggggg
-gggglggggggggggg
-ggggGggggggggggg
-gggggggggggggggg
-gggggggggggggggg
-gggggggggggglggg
-ggggggggggggGggg
-gggggggggggggggg
-gglggggggggggggg
-ggGggggggggggggg
-gggggggggggggggg
-gggggggggggggggg
-gggggggglggggggg
-ggggggggGggggggg
-gggggggggggggggg
 end

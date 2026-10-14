@@ -1,4 +1,3 @@
-# Projectiles and effects. Grayscale sprites marked (tint) are colored in code.
 sprite pj_yarn
 keys: s=gray1 S=gray2 d=gray3
 frame

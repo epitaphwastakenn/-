@@ -87,11 +87,11 @@ export const blueprintCosts = {
 
 export const difficulties = [
   { name: { pt: 'Normal', en: 'Normal' }, hp: 1, dmg: 1, speed: 1, gold: 1, heal: 1, eliteHp: 1 },
-  { name: { pt: 'Pesadelo I', en: 'Nightmare I' }, hp: 1.6, dmg: 1.3, speed: 1.05, gold: 1.35, heal: 0.85, eliteHp: 1.6 },
-  { name: { pt: 'Pesadelo II', en: 'Nightmare II' }, hp: 2.4, dmg: 1.6, speed: 1.08, gold: 1.7, heal: 0.7, eliteHp: 2.4 },
-  { name: { pt: 'Pesadelo III', en: 'Nightmare III' }, hp: 3.5, dmg: 2, speed: 1.12, gold: 2.1, heal: 0.6, eliteHp: 3.5 },
-  { name: { pt: 'Pesadelo IV', en: 'Nightmare IV' }, hp: 5, dmg: 2.5, speed: 1.15, gold: 2.6, heal: 0.5, eliteHp: 5 },
-  { name: { pt: 'Pesadelo V', en: 'Nightmare V' }, hp: 7, dmg: 3, speed: 1.2, gold: 3.2, heal: 0.4, eliteHp: 7 },
+  { name: { pt: 'Pesadelo I', en: 'Nightmare I' }, hp: 1.4, dmg: 1.2, speed: 1.03, gold: 1.35, heal: 0.9, eliteHp: 1.4 },
+  { name: { pt: 'Pesadelo II', en: 'Nightmare II' }, hp: 1.9, dmg: 1.4, speed: 1.06, gold: 1.7, heal: 0.8, eliteHp: 1.9 },
+  { name: { pt: 'Pesadelo III', en: 'Nightmare III' }, hp: 2.2, dmg: 1.5, speed: 1.08, gold: 2.1, heal: 0.7, eliteHp: 2.2 },
+  { name: { pt: 'Pesadelo IV', en: 'Nightmare IV' }, hp: 2.6, dmg: 1.65, speed: 1.1, gold: 2.6, heal: 0.6, eliteHp: 2.6 },
+  { name: { pt: 'Pesadelo V', en: 'Nightmare V' }, hp: 3, dmg: 1.8, speed: 1.12, gold: 3.2, heal: 0.5, eliteHp: 3 },
 ];
 
 export const blessings = {

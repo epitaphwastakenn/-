@@ -1,0 +1,358 @@
+# Purrvivors pickups and enemy bullets (default ink outline)
+
+# ---------------- PICKUPS: GEMS (same style as pk_gem_0 in reference.txt)
+sprite pk_gem_1
+keys: l=green1 g=green3 G=green4 d=green5
+frame
+...lg..
+..llgg.
+.llgggG
+llgggGG
+lgggGGd
+.gggGd.
+..gGGd.
+...Gd..
+end
+
+sprite pk_gem_2
+keys: l=purple1 L=purple2 p=purple3 P=purple4 d=purple5
+frame
+...lp...
+..llpp..
+.lLpppP.
+lLppppPP
+lpppPPPd
+.ppPPPd.
+..pPPd..
+...Pd...
+...dd...
+end
+
+sprite pk_gem_3
+keys: l=red1 W=white r=red2 R=red3 d=red4 D=red5
+frame
+....lr....
+...lWrr...
+..llrrrR..
+.llrrrrrR.
+llrrrrrrRR
+lrrrrrrRRd
+lrrrrrRRRd
+.rrrrRRRd.
+..rrRRRd..
+...rRRd...
+....dd....
+end
+
+# ---------------- PICKUPS: COINS
+sprite pk_coin
+keys: Y=yellow2 y=yellow3 o=yellow4 F=yellow4
+frame
+..YYy..
+.Yyyyy.
+YyyFFFy
+YyFFFyo
+yyyFFFo
+.yyyyo.
+..yoo..
+end
+
+sprite pk_coinbag
+keys: y=yellow3 Y=yellow2 o=yellow4 r=red3 R=red4 l=brown1 b=brown2 B=brown3 d=brown4
+frame
+..yYy.yy...
+.yYyyyYyo..
+..rrRrrR...
+...bbBBb...
+..lbbbbbB..
+.lbbbbbbbB.
+lbbbyYybbbB
+lbbbYyobbBd
+lbbbbooBbBd
+.lbbbbbbBd.
+..BBBBBdd..
+end
+
+sprite pk_fish
+keys: l=orange2 o=orange3 O=orange4 b=brown4 w=cream W=white k=ink
+frame
+....OOO.....
+..llllbll..O
+.lWllbllblOO
+ookoboobooO.
+ooobooboooO.
+.OOOObOOOOOO
+..wwbwwww..O
+.....OOO....
+end
+
+sprite pk_magnet
+keys: W=white w=gray1 g=gray2 l=red1 r=red2 R=red3 d=red4 D=red5
+frame
+WWw....WWw
+WwW....WwW
+ggg....ggg
+lrR....rRd
+lrR....rRd
+lrR....rRd
+lrrR..RRRd
+.rrRrRRRd.
+.rRRRRRdd.
+...dDDD...
+end
+
+sprite pk_bomb
+keys: l=pink2 p=pink3 m=pink4 d=pink5 t=brown3 y=yellow2 o=orange3 W=white
+frame
+........y.
+.....ttoWo
+..lpptp.y.
+.lllpppm..
+llpppmppm.
+lpppmpppm.
+lppmpppmm.
+lpmpppmmd.
+pmmppmmdd.
+.mmpmmdd..
+..mmddd...
+end
+
+sprite pk_clock
+keys: y=yellow3 Y=yellow2 b=blue3 B=blue4 d=blue5 l=blue2 w=cream
+frame
+...yYYy...
+....yy....
+...llbb...
+.llbbbbbB.
+lbbwkwwbBd
+lbwwkwwwBd
+lbwwkkkwBd
+lbwwwwwwBd
+lbbwwwwbBd
+.bBBBBBBd.
+...BBdd...
+end
+
+# ---------------- PICKUPS: CHESTS
+sprite pk_chest
+keys: l=brown2 o=brown3 O=brown4 d=brown5 Y=yellow3 y=yellow2 g=yellow4 G=yellow5
+frame
+..llllllllll..
+.lyYooooooyYO.
+llyYooooooyYOO
+llyYoYYYYoyYOO
+ddyYdYkkYdyYdd
+loyYoYkkYoyYOd
+loyYoYYYYoyYOd
+oOyYooooooyYOd
+oOyYooooooyYOd
+oooooooooooOOd
+oOOOOOOOOOOOOd
+dddddddddddddd
+end
+
+sprite pk_chest_open
+keys: l=brown2 o=brown3 O=brown4 d=brown5 Y=yellow3 y=yellow2 g=yellow4 G=yellow5 W=white w=yellow1
+frame
+.dddddddddddd.
+.dOOOOOOOOOOd.
+.dOOOOOOOOOOd.
+.dOOOOOOOOOOd.
+dyywYYWYYyYyYd
+dYWYyYYyYWYyYd
+dYYYYYYYYYYYYd
+oOyYooooooyYOd
+oOyYooooooyYOd
+oooooooooooOOd
+oOOOOOOOOOOOOd
+dddddddddddddd
+end
+
+sprite pk_chest_boss
+keys: l=purple3 o=purple4 O=purple5 d=purple6 Y=yellow3 y=yellow2 g=yellow4 G=yellow5 r=red2 R=red3 W=white
+frame
+...YYYYYYYYYY...
+..YyloooooooOYg.
+.YylooooooooOOYg
+YylooooooooooOOg
+YYYYYYYYYYYYYYYG
+YoOYoooYYoooYOoY
+YoOYooYrWRYoYOoY
+YoOYoooYRRYooYOY
+YoOYooooYYooooYO
+YoOYoooooooooYOd
+YYYYYYYYYYYYYYYG
+OOOOOOOOOOOOOOOd
+YgYgYgYgYgYgYgYG
+dddddddddddddddd
+end
+
+sprite pk_chest_boss_open
+keys: l=purple3 o=purple4 O=purple5 d=purple6 Y=yellow3 y=yellow2 g=yellow4 G=yellow5 r=red2 R=red3 W=white w=yellow1
+frame
+.YYYYYYYYYYYYY..
+.YdOOOOOOOOOOdY.
+.YdOOOOOOOOOOdY.
+.YdOOOOOOOOOOdY.
+YyywYYWYYyYWYyYG
+YYWYyYYyYYWYyYYG
+YYYYYYYYYYYYYYYG
+YoOYoooYYoooYOoY
+YoOYooYrWRYoYOoY
+YoOYoooYRRYooYOY
+YYYYYYYYYYYYYYYG
+OOOOOOOOOOOOOOOd
+YgYgYgYgYgYgYgYG
+dddddddddddddddd
+end
+
+sprite pk_scroll
+keys: W=white w=cream l=blue2 b=blue3 B=blue4 m=mint2 M=mint3 n=mint4
+frame
+.......ww.
+......wWBw
+.....lbbbB
+....lbbbB.
+...mMbbB..
+..lbmMB...
+.lbbbn....
+lbbbB.....
+wBWw......
+.ww.......
+end
+
+# ---------------- ENEMY BULLETS (bright, high contrast; "pointing right" ones are rotated by the game)
+sprite sh_web
+keys: W=white g=gray2 G=gray3
+frame
+..WgGW..
+.WgWWgW.
+WgWWWWgW
+GWWgGWWG
+gWWGgWWg
+WgWWWWgW
+.WgWWgW.
+..WgGW..
+end
+
+sprite sh_snowball
+keys: W=white w=blue1 b=blue2
+frame
+.WWww.
+WWWwwb
+WWwwwb
+Wwwwbb
+wwwbbb
+.wbbb.
+end
+
+sprite sh_arrow
+keys: r=red2 R=red3 b=brown2 B=brown3 W=white g=gray2
+frame
+Rr...Wg..
+.rbBBBWWg
+Rr...Wg..
+end
+
+sprite sh_fireball
+keys: o=orange3 O=orange4 r=red3 y=yellow3 Y=yellow2 W=white
+frame
+..o..o..
+.orooro.
+orOyyOro
+oOyYYyOo
+oOyYWyOo
+orOyyOro
+.orooro.
+..oooo..
+end
+
+sprite sh_eyebeam
+keys: p=pink3 P=pink2 w=pink1 W=white
+frame
+..pppp..
+pPwWWWWw
+..pppp..
+end
+
+sprite sh_slimeball
+keys: l=green1 g=green3 G=green4 d=green5
+frame
+..lll..
+.llggg.
+lgggggG
+gggggGG
+gggggGG
+.gggGG.
+..GGd..
+end
+
+sprite sh_acorn
+keys: d=brown5 B=brown4 b=brown3 o=orange3 O=orange2 l=orange1
+frame
+..d...
+.BBBB.
+BbBbBB
+.BBBB.
+.OllO.
+.ooOo.
+..oo..
+end
+
+sprite sh_icespike
+keys: W=white l=blue1 b=blue2 B=blue3 d=blue4
+frame
+WWWlb....
+WWlllbbBB
+bbbbbBBd.
+BBBBd....
+end
+
+sprite sh_bigsnowball
+keys: W=white w=blue1 b=blue2 B=blue3 d=blue4
+frame
+......WWWWww......
+...WWWWWWWWwwb....
+..WWWWWWWWwwwwb...
+.WWWWWWWWwwwwwbbb.
+.WWWWWWWwwwwwwbbB.
+WWWwwwWWWwwbbwbbbB
+WWWWWWWwwwwwwbbbBB
+WWWWWwwwwwwwwbbBBB
+WWWwwwwwWbwwbbbBBB
+wwwWwwwwwwwwbbbBBB
+wwwwwwwwwWbbbBBBBB
+bwwwWwwwbbbbbbBBBd
+.bbbbwwwbbbbbBBBBd
+.bbbbbbbbBBbBBBBBd
+..bbbbbbbbBBBBBBd.
+...bbBBBBBBBBBBd..
+....BBBBBBBBBBd...
+......BBBBBdd.....
+end
+
+sprite sh_bloodorb
+keys: R=red2 W=pink1 r=red3 d=red4 D=red5
+frame
+..RRr..
+.RWrrrd
+RWrrrrd
+Rrrrrdd
+rrrrddD
+.rdddD.
+..DDD..
+end
+
+sprite sh_voidorb
+keys: P=purple3 V=purple5 u=purple6 c=purple2 W=white
+frame
+...PPP...
+..PVVVP..
+.PVuuuVP.
+PVucccuVP
+PVucWcuVP
+PVucccuVP
+.PVuuuVP.
+..PVVVP..
+...PPP...
+end

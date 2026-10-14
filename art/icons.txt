@@ -1,0 +1,23 @@
+# Purrvivors icons: weapons, evolutions, passives, UI. All 16x16 (coin/skull 12x12), light from the top-left.
+
+# ---------------------------------------------------------------- WEAPONS
+sprite ic_claw
+keys: o=orange2 O=orange3
+frame
+.........w.....w
+........wO....wO
+.....wwwO..wwwO.
+....wwwO..wwwO..
+...wwwOO.wwwwO..
+..wwwOO.wwwwO...
+..wwOO.wwwwO...w
+.wwOO.wwwwO...wO
+wwO..wwwwO.wwwO.
+wO..wwwwO.wwwO..
+...wwwwO.wwwOO..
+..wwwwO.wwwOO...
+..wwwO..wwOO....
+.wwOO..wwOO.....
+wO....wO........
+w......w........
+end

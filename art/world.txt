@@ -1,0 +1,884 @@
+# Purrvivors world art: ground tiles, flat decor, breakable props, boss-arena post
+
+# ---------------- GROUND TILES (16x16, outline=0, seamless; tile _0 is the cleanest and used most)
+sprite gr_meadow_0 outline=0
+keys: g=green3 G=green4 l=green2
+frame
+gggggggggggggggg
+gggggggggggggggg
+ggglgggggggggggg
+gggGggggggglgggg
+gggggggggggGgggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+ggggggglgggggggg
+gggggggGgggggggg
+gggggggggggggggg
+gglggggggggggggg
+ggGgggggggggglgg
+gggggggggggggGgg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+sprite gr_meadow_1 outline=0
+keys: g=green3 G=green4 l=green2
+frame
+gggggggggggggggg
+gggggggggggggggg
+gggggglggggggggg
+ggggggGggggggggg
+gggggggggglglggg
+ggggggggggGlGggg
+gggggggggggGgggg
+gggggggggggggggg
+gggggggggggggggg
+ggglgggggggggggg
+gggGgggggggggggg
+gggggggggggggggg
+gggggggggggglggg
+ggggggggggggGggg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+sprite gr_meadow_2 outline=0
+keys: g=green3 G=green4 l=green2 p=gray2 P=gray3
+frame
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggglggg
+ggggggggggggGggg
+ggggppgggggggggg
+ggggPPPggggggggg
+gggggGGggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggpPggg
+gglggggggggggggg
+ggGggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+sprite gr_meadow_3 outline=0
+keys: g=green3 G=green4 l=green2
+frame
+gggggggggggggggg
+gggggggggggggggg
+ggggggggglgggggg
+ggglgggggggggggg
+gggglggggggggggg
+ggggggggggggglgg
+ggggggglgggggGgg
+gggggggGgggggggg
+ggggggggggglgggg
+gglggggggggggggg
+ggGggggggggggggg
+ggggglgggggggggg
+gggggggggggglggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+sprite gr_woods_0 outline=0
+keys: g=green5 m=green6 h=green4
+frame
+gggggggggggggggg
+gggggggggggggggg
+gggggmmggggggmmg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+ggggggggggggghgg
+ggggggggmmgggggg
+gggggggggggggggg
+gggmmggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+ggggggggmmgggggg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+sprite gr_woods_1 outline=0
+keys: g=green5 m=green6 h=green4 t=brown4 T=brown5 u=brown3
+frame
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggtugggggmmgggg
+ggggTggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+ggghggggggmmgggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+sprite gr_woods_2 outline=0
+keys: g=green5 m=green6 h=green4 t=brown4 T=brown5
+frame
+gggggggggggggggg
+ggggggggggmmgggg
+gggggggggggggggg
+gggggggggggggggg
+ggggmmgggggggggg
+gggggggggttggggg
+gggggggggTtggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+ggggmmgggggggggg
+ggggggggmmgggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggghg
+gggggggggggggggg
+end
+
+sprite gr_woods_3 outline=0
+keys: g=green5 m=green6 h=green4
+frame
+gggggggggggggggg
+gggggggggggggmmg
+gggggggggggggggg
+gggggggggggggggg
+gggghghggggggggg
+ggggmhmggggggmmg
+gggggmgggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+ggggggggghgggggg
+ggmmgggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+sprite gr_peaks_0 outline=0
+keys: s=blue1 w=white b=blue2
+frame
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssbsss
+ssswwwssssssssss
+ssssbbbsssssssss
+ssssssssssssssss
+ssssssssssssssss
+sssssssssswwssss
+sssssssssssbssss
+ssssssssssssssss
+ssssssssssssssss
+ssssswwwssssssss
+ssssssbbbsssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+end
+
+sprite gr_peaks_1 outline=0
+keys: s=blue1 b=blue2
+frame
+ssssssssssssssss
+ssssssssssssssss
+sssbsbssssssssss
+ssbsssbsssssssss
+sssbbbssssssssss
+sssbbbssssssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssbsbsss
+sssssssssbsssbss
+ssssssssssbbbsss
+ssssssssssbbbsss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+end
+
+sprite gr_peaks_2 outline=0
+keys: s=blue1 w=white b=blue2
+frame
+ssssssssssssssss
+ssssssssssssssss
+sssssssssssswsss
+ssssssssssssssss
+ssssssssssssssss
+ssssssbbbbssssss
+sssssbwwbbbsssss
+sssssbbbbbbsssss
+ssssssbbbbssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+ssswwsssssssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+end
+
+sprite gr_peaks_3 outline=0
+keys: s=blue1 w=white b=blue2 c=blue3
+frame
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssswswssss
+ssswwwsssscsssss
+ssssbbbsswswssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+sssssssswwwsssss
+sssssssssbbbssss
+ssssssssssssssss
+ssssssssssssssss
+ssssssssssssssss
+end
+
+sprite gr_crypt_0 outline=0
+keys: s=gray5 p=purple6 S=gray4
+frame
+pppppppppppppppp
+pSSSssssssssssss
+pSssssssssssssss
+psssssssSsssssss
+psssssssssssssss
+psssssssssssSsss
+pssSssssssssssss
+psssssssssssssss
+psssssssssssssss
+pppppppppppppppp
+sssssspSSSssssss
+sssssspSssssssss
+sssssspsssSsssss
+sssSsspsssssssss
+sssssspsssssssss
+sssssspsssssssss
+end
+
+sprite gr_crypt_1 outline=0
+keys: s=gray5 p=purple6 S=gray4 c=gray6
+frame
+pppppppppppppppp
+pSSSssssssssssss
+pSssssscssssssss
+pssssssccsssssss
+pssssssscsssssss
+psssssssccssssss
+psssssssscscssss
+psssssssssssssss
+psssssssssssssss
+pppppppppppppppp
+sssssspSSSssssss
+sssssspSssssssss
+sssssspsssssssss
+sssSsspssssSssss
+sssssspsssssssss
+sssssspsssssssss
+end
+
+sprite gr_crypt_2 outline=0
+keys: s=gray5 p=purple6 S=gray4 m=green5 M=green4
+frame
+pppppppppppppppp
+pSSSssssssssssss
+pSssssssssssssss
+pssssssSssssssss
+pssssssssssssSss
+psssssssssssssss
+psmMssssssssssss
+psmmmsssssssssss
+psssssssssssssss
+ppppppppmmpppppp
+sssssspSSSssssss
+sssssspSssssssss
+sssssspssssSssss
+sssssspsssssssss
+sssssspsssssssss
+sssssspsssssssss
+end
+
+sprite gr_crypt_3 outline=0
+keys: s=gray5 p=purple6 S=gray4 c=gray6
+frame
+pppppppppppppppp
+pSSSssssssssssss
+pSssssssssssssss
+psssssssssssssss
+psssSsssssssssss
+psssssSsssssssss
+psssssssssssssss
+psssssssssssssss
+psssssssssssssss
+pppppppppppppppp
+sssssspSSSssssss
+sssssspSsssscsss
+sssssspssssccsss
+sssSsspsssscssss
+sssssspsssccssss
+sssssspsssssssss
+end
+
+sprite gr_abyss_0 outline=0
+keys: g=gray6 b=brown5 h=gray5
+frame
+gggggggggggggggg
+gggggggggggggggg
+ggggggggghgggggg
+gggghggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggghhhggggggg
+gggggghggggggggg
+ghggggggggggghgg
+gggggggggggggggg
+gggggggghggggggg
+gggbbggggggggggg
+gggggggggggggbbg
+gggggggggggggggg
+ghggggggbbgggggg
+gggggggggggggggg
+end
+
+sprite gr_abyss_1 outline=0
+keys: g=gray6 r=red5 b=brown5 h=gray5 o=orange3 y=yellow3
+frame
+gggggggggggggggg
+gggggggggggggggg
+gbbgghgggggggggg
+gggggggggggggggg
+ggggggggggorgggg
+ggggggggyogggggg
+ggggggoyrrgggghg
+ggggyyrogggggggg
+ggroorgrorgggggg
+gggrgggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gggghggggggggggg
+ggggggggbbgggggg
+gggggggggggggggg
+end
+
+sprite gr_abyss_2 outline=0
+keys: g=gray6 r=red5 b=brown5 h=gray5 o=orange3 y=yellow3
+frame
+gggggggggggggggg
+gggggggggggggghg
+gghhhggggggggggg
+gghggggggggggggg
+gggggggggryggggg
+ggggggggggorgggg
+gggggggggggggggg
+gggggggggggggggg
+ggggrggggggggghg
+gggggoyggggggggg
+ggggggorgggggggg
+ggggggggggggoggg
+gggggggggggggggg
+ggbbgggggggggggg
+ggggggggghgggggg
+gggggggggggggggg
+end
+
+sprite gr_abyss_3 outline=0
+keys: g=gray6 r=red5 b=brown5 h=gray5 o=orange3 R=red4
+frame
+gggggggggggggggg
+gggggggggggggggg
+ghgggggghgggbbgg
+gggggggggggggggg
+ggggRRgggggggggg
+gggggRrggggggggg
+gggggggrRggggggg
+gggggggorggggghg
+gghggggggrgggggg
+gggggggggggggggg
+gggggggggggggggg
+gggggggggggggggg
+gghhhggggggggghg
+gghgggggggbbgggg
+gggggggggggggggg
+gggggggggggggggg
+end
+
+# ---------------- DECOR: MEADOW
+sprite de_flower_0 outline=0
+keys: P=pink2 p=pink3 d=pink4 y=yellow3 Y=yellow2 s=green4 S=green5 l=green2
+frame
+..PPp..
+.PPppp.
+PPpYppd
+Ppyyypd
+.ppypd.
+.pppdd.
+.pd.dd.
+...s...
+.lssS..
+...s...
+...S...
+end
+
+sprite de_flower_1 outline=0
+keys: W=white g=gray1 y=yellow3 Y=yellow2 s=green4 S=green5 l=green2
+frame
+...W...
+.W.W.W.
+..yyy..
+WWyYyWg
+..yyy..
+.W.W.g.
+...g...
+...s...
+.lssS..
+...s...
+end
+
+sprite de_flower_2 outline=0
+keys: b=blue3 l=blue2 y=yellow2 s=green4 S=green5 L=green2
+frame
+........l.
+.l.....lyb
+lyb..l..b.
+.b..lyb.s.
+.s...b.s..
+..s..s.s..
+...s.ss...
+..Ls.s.L..
+....S.....
+end
+
+sprite de_grass_0 outline=0
+keys: s=green4 S=green5 l=green2
+frame
+...l....
+.l.s..l.
+.s.s.ls.
+..sssss.
+.sSssSs.
+..SSSS..
+end
+
+sprite de_grass_1 outline=0
+keys: s=green4 S=green5 l=green2
+frame
+...l...
+.l.ls..
+.ls.s.l
+.ls.sls
+.ss.sss
+.sSssSs
+.sS.sS.
+..S.S..
+end
+
+sprite de_pebble outline=4 outlineColor=gray5
+keys: W=gray1 w=gray2 g=gray3 G=gray4
+frame
+..WWw.....
+.WwwwG.WW.
+.wwgggGwwG
+.GGGGG.GGG
+end
+
+# ---------------- DECOR: WOODS
+sprite de_leaf_0 outline=0
+keys: l=orange2 o=orange3 O=orange4 v=orange5 t=brown4
+frame
+....llv
+...lovO
+..lovoO
+.lovoO.
+.lvoO..
+tvOO...
+t......
+end
+
+sprite de_leaf_1 outline=0
+keys: l=brown2 o=brown3 O=brown4 v=brown5
+frame
+..l.l..
+.lolol.
+looooOO
+.oovoO.
+..ovO..
+...v...
+end
+
+sprite de_mushroom outline=0
+keys: r=red3 R=red2 d=red4 w=cream W=white g=brown1
+frame
+..RRrr....
+.RWrrWr...
+RrrrrrrdRr
+dddddddRWr
+..wgg..ddd
+..wgg..wg.
+..wgg..wg.
+end
+
+sprite de_fern outline=0 mirror=odd
+keys: f=green4 F=green3 d=green5 l=green2
+frame
+....l
+...fF
+.l.fF
+.fFfF
+lf.fd
+...fd
+...dd
+end
+
+sprite de_root outline=0
+keys: b=brown3 B=brown4 d=brown5 l=brown2
+frame
+....llllll....
+..lllbbbbbb...
+.lbbBb....bbb.
+.bBB........bB
+bBB..........B
+dBd........dBd
+ddd........ddd
+end
+
+# ---------------- DECOR: PEAKS
+sprite de_snowpile outline=4 outlineColor=blue3
+keys: W=white s=blue1 b=blue2
+frame
+....WWW...
+..WWWWWWs.
+.WWWWWsssb
+sssssssbbb
+end
+
+sprite de_icecrystal outline=4 outlineColor=blue5
+keys: W=white l=blue1 b=blue2 B=blue3 d=blue4
+frame
+....W....
+...WlB...
+...WbB.W.
+.W.lbB.lB
+.lbWbBdbB
+.bBBbBBbd
+..dBBBBd.
+end
+
+sprite de_pinecone outline=4 outlineColor=brown5
+keys: l=brown2 b=brown3 B=brown4 d=brown5
+frame
+..bb..
+.lbBb.
+.bBbB.
+lbBbBB
+.bBbBd
+.BbBdd
+..BdB.
+end
+
+sprite de_snowtuft outline=0
+keys: s=green4 S=green5 W=white w=blue1 b=blue2
+frame
+...W..W.
+.W.s..s.
+.s.s.Ws.
+.ss.sss.
+WsSsSsSW
+wWwwwWww
+.bbbbbb.
+end
+
+sprite de_rockice outline=4 outlineColor=gray5
+keys: W=white w=blue1 b=blue2 g=gray2 G=gray3 d=gray4
+frame
+..WWWW....
+.WWWWWw...
+WWwwwwwbb.
+.bbGgGbbG.
+gGGGGGGGGd
+GGGGdGGGdd
+.dddddddd.
+end
+
+# ---------------- DECOR: CRYPT
+sprite de_bones outline=0
+keys: W=white w=cream g=gray2 G=gray3
+frame
+........WW.
+.......WwwW
+......Wwwg.
+.....Wwwg..
+....Wwwg...
+.WW.wwgG...
+WwwWwgG....
+.WwwgG.....
+..gGG......
+end
+
+sprite de_skull outline=0
+keys: w=cream W=white g=gray2 G=gray3
+frame
+..wwww..
+.wWwwwg.
+wwwwwwwg
+wkkwwkkg
+wkkwwkkg
+wwwkkwwg
+.wwwwwg.
+..wgwgG.
+end
+
+sprite de_candle outline=0
+keys: w=cream W=white g=gray2 G=gray3 y=yellow3 Y=yellow2 o=orange3 b=brown1
+frame
+...o...
+..oYo..
+..oyo..
+...k...
+..wWwg.
+..wwwg.
+..wbwG.
+..wwbg.
+.wwwwwg
+GgGGGGG
+end
+
+sprite de_cobweb outline=0
+keys: g=gray3 G=gray2
+frame
+g..ggg..g
+.gg.g.gg.
+.ggggggg.
+g.g.G.g.g
+gggGGGggg
+g.g.G.g.g
+.ggggggg.
+.gg.g.gg.
+g..ggg..g
+end
+
+sprite de_crack outline=0
+keys: c=gray6 s=gray4
+frame
+..........cc
+.......cccs.
+....ccc.ss..
+..cccs......
+ccc.s..c....
+...s....cs..
+end
+
+sprite de_tombstone outline=4
+keys: g=gray3 W=gray2 G=gray4 c=gray5 m=green4 M=green5
+frame
+..gggggg..
+.gWWgggGG.
+gWggggggGG
+gWgggcgggG
+gggcccccgG
+gggggcgggG
+ggggGcgGgG
+gggggcgggG
+gggggggggG
+gggggggggG
+mMgggggggM
+GGGGGGGGGG
+end
+
+# ---------------- DECOR: ABYSS
+sprite de_lavacrack outline=0
+keys: r=red5 o=orange3 y=yellow3
+frame
+............oo
+.......yy..yr.
+..oy..o.roo...
+oor.yor...r...
+r...r.........
+end
+
+sprite de_ashrock outline=4
+keys: l=gray3 g=gray4 G=gray5 d=gray6
+frame
+...lll...
+..lllgg..
+.lllgggg.
+lllggggGG
+lgggggGGG
+GgggGGGGd
+.GGGGGdd.
+end
+
+sprite de_bonespike outline=4 outlineColor=brown5
+keys: W=white w=cream g=gray2 G=gray3 r=red5 b=brown5 d=red4
+frame
+...W...
+...wg..
+...wg..
+..wwg..
+..wwgG.
+..wwgG.
+.rwwgGb
+rrdwgbb
+brrrrbr
+end
+
+sprite de_ember outline=0
+keys: G=gray5 g=gray4 d=gray6 r=red4 o=orange3 y=yellow3 Y=yellow2
+frame
+..Y....
+.gGGG..
+GGrorG.
+GroYoGG
+GGroGrG
+.GGGGG.
+..ddd..
+end
+
+sprite de_obsidian outline=4 outlineColor=purple5
+keys: k=ink u=purple6 p=purple5 P=purple4 W=white
+frame
+...W...
+..WuP..
+..uukp.
+.uuukkp
+.uuukkp
+uuuukkk
+uuukkkk
+.kkkkk.
+end
+
+# ---------------- PROPS (breakable, default ink outline)
+sprite prop_pot
+keys: l=orange2 o=orange3 O=orange4 d=orange5 b=blue3 B=blue4 c=blue2 w=cream
+frame
+..lllloooo..
+..ooooOOOO..
+..OlooooOO..
+...looooO...
+..llooooOO..
+.llooooooOO.
+llwoooooooOd
+ccbbbbbbbBBB
+cbbbbbbbbBBB
+llooooooooOd
+.lloooooOOd.
+..looooOOd..
+...oooOOd...
+..OOOOOOdd..
+end
+
+sprite prop_lantern
+keys: o=orange3 O=orange4 r=red3 R=red4 y=yellow3 Y=yellow2 w=cream t=brown3 T=brown4 d=brown5
+frame
+.....dd.....
+...dTTTTd...
+..rRyyyyOR..
+.rRoYYYYyOR.
+.rRoYwwYyOR.
+.rRoYwwYyOR.
+.rRoYYYYyOR.
+..rRyyyyOR..
+...dTTTTd...
+.....tT.....
+.....tT.....
+.....tT.....
+....ttTT....
+...dTTTTd...
+end
+
+sprite prop_snowcrate
+keys: W=white w=blue1 b=blue2 l=brown2 o=brown3 O=brown4 d=brown5
+frame
+...WWWW.....
+.WWWWWWWw...
+WWWWWWWWwwW.
+WwbWWbWWwbwb
+.lOOOOOOOOd.
+.ldoooooodO.
+.lodoooodoO.
+.loodoodooO.
+.loooddoooO.
+.loooddoooO.
+.loodoodooO.
+.lodoooodoO.
+.ldoooooodO.
+.dddddddddd.
+end
+
+sprite prop_coffin
+keys: l=brown2 o=brown3 O=brown4 d=brown5 w=cream
+frame
+...loooO...
+..loooooO..
+.loooooooO.
+loooowooooO
+loooowooooO
+loowwwwwooO
+.looowoooO.
+.looowoooO.
+.looowoooO.
+..loowooO..
+..loooooO..
+..loooooO..
+...loooO...
+...ddddd...
+end
+
+sprite prop_brazier
+keys: y=yellow2 Y=yellow3 o=orange3 r=red3 l=gray3 g=gray4 G=gray5 d=gray6
+frame
+.....y......
+....yYy..o..
+...oyYYo.oo.
+..roYyYooyo.
+..roooYooor.
+...rooooor..
+lllllllllllg
+.gggggggggG.
+..GGGGGGGG..
+...dGGGGd...
+....dddd....
+..g..gg..g..
+..g..gg..g..
+.gg..gg..gg.
+end
+
+# ---------------- ARENA
+sprite ar_post
+keys: W=white l=pink1 P=pink2 p=pink3 m=pink4 v=purple4 V=purple5 w=pink1 g=gray2 G=gray3 h=gray4
+frame
+....lW....
+...lPWm...
+..lPPWmv..
+.PPpWwmvV.
+.PPpWlmvV.
+.PPpWlmvV.
+.PpPWlpvV.
+.PpPWlpvV.
+.ppPWlpvV.
+.ppPWlmvV.
+.ppPllmvV.
+.pppPlmvV.
+..ppPPmV..
+..pppmVV..
+.gggggggg.
+GGGGGGGGGh
+end

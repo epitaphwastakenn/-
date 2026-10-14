@@ -1,0 +1,44 @@
+// FUNCTIONS
+export async function run(page, shot) {
+  await page.evaluate(() => { const s = window.purr.save; s.gold = 1500; s.blueprints = ['laser', 'feather']; s.settings.lang = 'pt'; window.purr.setSetting('lang', 'pt'); });
+  await page.mouse.click(200, 500);
+  await page.waitForTimeout(300);
+  await page.evaluate(() => window.purr.showScreen('menu'));
+  await page.waitForTimeout(400);
+  await shot('20-menu-pt');
+  await page.evaluate(() => window.purr.showScreen('prerun'));
+  await page.waitForTimeout(400);
+  await shot('21-prerun');
+  await page.evaluate(() => window.purr.showScreen('shop'));
+  await page.waitForTimeout(400);
+  await shot('22-shop');
+  await page.evaluate(() => window.purr.showScreen('arsenal', 'weapons'));
+  await page.waitForTimeout(400);
+  await shot('23-arsenal');
+  await page.evaluate(() => window.purr.showScreen('arsenal', 'recipes'));
+  await page.waitForTimeout(400);
+  await shot('24-recipes');
+  await page.evaluate(() => window.purr.showScreen('achievements'));
+  await page.waitForTimeout(400);
+  await shot('25-achievements');
+  await page.evaluate(() => window.purr.showScreen('settings'));
+  await page.waitForTimeout(400);
+  await shot('26-settings');
+  await page.evaluate(() => { window.purr.startRun('bigode', 0); });
+  await page.waitForTimeout(1500);
+  await shot('27-run-hint');
+  await page.evaluate(() => window.purr.openPause());
+  await page.waitForTimeout(400);
+  await shot('28-pause');
+  await page.evaluate(() => { window.purr.resumeGame(); const w = window.purr.world; w.zoneIndex = 1; w.pendingChests.push('boss'); });
+  await page.waitForTimeout(600);
+  await page.mouse.click(206, 400);
+  await page.waitForTimeout(2200);
+  await shot('29-chest');
+  await page.evaluate(() => { window.purr.closeAllModals(); const w = window.purr.world; w.zoneIndex = 0; w.events.push({ type: 'zoneClear', zone: 0 }); });
+  await page.waitForTimeout(800);
+  await shot('30-camp');
+  await page.evaluate(() => { window.purr.closeAllModals(); window.purr.quitRun(); });
+  await page.waitForTimeout(1200);
+  await shot('31-results');
+}

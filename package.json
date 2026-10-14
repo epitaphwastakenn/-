@@ -1,0 +1,23 @@
+{
+  "name": "purrvivors",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Purrvivors - cute pixel-art survivors-like for Android",
+  "type": "module",
+  "scripts": {
+    "art": "python3 tools/build_art.py",
+    "icons": "python3 tools/build_icons.py",
+    "audio": "node tools/build_audio.mjs",
+    "web": "node tools/build_web.mjs",
+    "web:dev": "node tools/build_web.mjs --dev",
+    "apk": "bash tools/build-apk.sh",
+    "build": "bash tools/build_all.sh",
+    "sim": "node tools/sim.mjs",
+    "stress": "node tools/stress.mjs",
+    "campaign": "bash tools/campaigns.sh",
+    "shots": "node tools/shot.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
+  }
+}

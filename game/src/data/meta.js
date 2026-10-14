@@ -1,0 +1,132 @@
+// VARIABLES
+export const characters = {
+  bigode: {
+    name: { pt: 'Bigode', en: 'Whiskers' },
+    title: { pt: 'O Aventureiro', en: 'The Adventurer' },
+    sprite: 'hero_bigode',
+    weapon: 'claw',
+    bonus: { maxHp: 0.1 },
+    unlock: null,
+  },
+  luna: {
+    name: { pt: 'Luna', en: 'Luna' },
+    title: { pt: 'A Bruxinha', en: 'The Little Witch' },
+    sprite: 'hero_luna',
+    weapon: 'orbs',
+    bonus: { area: 0.1 },
+    unlock: 'beatKingGloop',
+  },
+  kenzo: {
+    name: { pt: 'Kenzo', en: 'Kenzo' },
+    title: { pt: 'O Ninja', en: 'The Ninja' },
+    sprite: 'hero_kenzo',
+    weapon: 'shuriken',
+    bonus: { moveSpeed: 0.1, crit: 0.05 },
+    unlock: 'beatElderOak',
+  },
+  mimi: {
+    name: { pt: 'Mimi', en: 'Mimi' },
+    title: { pt: 'A Confeiteira', en: 'The Baker' },
+    sprite: 'hero_mimi',
+    weapon: 'milk',
+    bonus: { regen: 0.3 },
+    unlock: 'kills2500',
+  },
+  faisca: {
+    name: { pt: 'Faísca', en: 'Sparky' },
+    title: { pt: 'O Inventor', en: 'The Inventor' },
+    sprite: 'hero_faisca',
+    weapon: 'drone',
+    bonus: { cooldown: -0.08 },
+    unlock: 'beatYeti',
+  },
+  nix: {
+    name: { pt: 'Nix', en: 'Nix' },
+    title: { pt: 'O Fantasma', en: 'The Phantom' },
+    sprite: 'hero_nix',
+    weapon: 'ghosts',
+    bonus: { luck: 0.15 },
+    unlock: 'beatCountRatula',
+  },
+  ronronaldo: {
+    name: { pt: 'Sir Ronronaldo', en: 'Sir Purrcival' },
+    title: { pt: 'O Rei', en: 'The King' },
+    sprite: 'hero_ronronaldo',
+    weapon: 'yarn',
+    bonus: { greed: 0.25, might: 0.05 },
+    unlock: 'beatCerberus',
+  },
+};
+
+export const upgrades = {
+  might: { name: { pt: 'Força', en: 'Might' }, icon: 'ic_whetstone', stat: 'might', per: 0.05, costs: [60, 140, 260, 420, 640] },
+  vitality: { name: { pt: 'Vitalidade', en: 'Vitality' }, icon: 'ic_cookie', stat: 'maxHp', per: 0.1, costs: [50, 120, 220, 360, 540] },
+  armor: { name: { pt: 'Armadura', en: 'Armor' }, icon: 'ic_cardboard', stat: 'armor', per: 0.04, costs: [120, 300, 600] },
+  recovery: { name: { pt: 'Regeneração', en: 'Recovery' }, icon: 'ic_cushion', stat: 'regen', per: 0.15, costs: [80, 200, 380, 620] },
+  agility: { name: { pt: 'Agilidade', en: 'Agility' }, icon: 'ic_swiftPaws', stat: 'moveSpeed', per: 0.05, costs: [90, 240, 480] },
+  magnet: { name: { pt: 'Ímã', en: 'Magnet' }, icon: 'ic_whiskers', stat: 'magnet', per: 0.2, costs: [40, 110, 240] },
+  cooldown: { name: { pt: 'Recarga', en: 'Cooldown' }, icon: 'ic_alarmClock', stat: 'cooldown', per: -0.03, costs: [150, 330, 600, 950] },
+  area: { name: { pt: 'Alcance', en: 'Area' }, icon: 'ic_magnifier', stat: 'area', per: 0.06, costs: [120, 300, 560] },
+  projSpeed: { name: { pt: 'Velocidade', en: 'Speed' }, icon: 'ic_feather', stat: 'projSpeed', per: 0.08, costs: [80, 220] },
+  duration: { name: { pt: 'Duração', en: 'Duration' }, icon: 'ic_hourglass', stat: 'duration', per: 0.08, costs: [100, 260] },
+  growth: { name: { pt: 'Crescimento', en: 'Growth' }, icon: 'ic_spellbook', stat: 'growth', per: 0.06, costs: [100, 240, 440, 700] },
+  luck: { name: { pt: 'Sorte', en: 'Luck' }, icon: 'ic_clover', stat: 'luck', per: 0.08, costs: [100, 260, 520] },
+  greed: { name: { pt: 'Ganância', en: 'Greed' }, icon: 'ic_luckyCoin', stat: 'greed', per: 0.1, costs: [60, 150, 300, 500, 760] },
+  crit: { name: { pt: 'Crítico', en: 'Critical' }, icon: 'ic_sharkTooth', stat: 'crit', per: 0.03, costs: [110, 280, 540] },
+  amount: { name: { pt: 'Quantidade', en: 'Amount' }, icon: 'ic_amount', stat: 'amount', per: 1, costs: [1800] },
+  revival: { name: { pt: 'Sétima Vida', en: 'Extra Life' }, icon: 'ic_revival', stat: 'revives', per: 1, costs: [1200] },
+  reroll: { name: { pt: 'Rerrolar', en: 'Reroll' }, icon: 'ic_reroll', stat: 'rerolls', per: 1, costs: [80, 200, 420] },
+  skip: { name: { pt: 'Pular', en: 'Skip' }, icon: 'ic_skip', stat: 'skips', per: 1, costs: [60, 160] },
+  banish: { name: { pt: 'Banir', en: 'Banish' }, icon: 'ic_banish', stat: 'banishes', per: 1, costs: [70, 180, 360] },
+};
+
+export const blueprintCosts = {
+  laser: 220, cranes: 180, shuriken: 200, drone: 260, fireworks: 300, frost: 280, ghosts: 340,
+  feather: 120, cardboard: 160, luckyCoin: 140, hourglass: 180, clover: 200,
+};
+
+export const difficulties = [
+  { name: { pt: 'Normal', en: 'Normal' }, hp: 1, dmg: 1, speed: 1, gold: 1, heal: 1, eliteHp: 1 },
+  { name: { pt: 'Pesadelo I', en: 'Nightmare I' }, hp: 1.6, dmg: 1.3, speed: 1.05, gold: 1.35, heal: 0.85, eliteHp: 1.6 },
+  { name: { pt: 'Pesadelo II', en: 'Nightmare II' }, hp: 2.4, dmg: 1.6, speed: 1.08, gold: 1.7, heal: 0.7, eliteHp: 2.4 },
+  { name: { pt: 'Pesadelo III', en: 'Nightmare III' }, hp: 3.5, dmg: 2, speed: 1.12, gold: 2.1, heal: 0.6, eliteHp: 3.5 },
+  { name: { pt: 'Pesadelo IV', en: 'Nightmare IV' }, hp: 5, dmg: 2.5, speed: 1.15, gold: 2.6, heal: 0.5, eliteHp: 5 },
+  { name: { pt: 'Pesadelo V', en: 'Nightmare V' }, hp: 7, dmg: 3, speed: 1.2, gold: 3.2, heal: 0.4, eliteHp: 7 },
+];
+
+export const blessings = {
+  feast: { name: { pt: 'Banquete', en: 'Feast' }, desc: { pt: 'Recupera toda a vida.', en: 'Fully restores your health.' }, icon: 'ic_fish' },
+  training: { name: { pt: 'Treino Intenso', en: 'Hard Training' }, desc: { pt: 'Ganha 2 níveis agora.', en: 'Gain 2 levels now.' }, icon: 'ic_spellbook' },
+  strength: { name: { pt: 'Garras de Aço', en: 'Steel Claws' }, desc: { pt: '+12% de dano nesta corrida.', en: '+12% damage this run.' }, icon: 'ic_whetstone' },
+  toughness: { name: { pt: 'Pelo Grosso', en: 'Thick Fur' }, desc: { pt: '+15% de vida máxima e cura 30%.', en: '+15% max health and heal 30%.' }, icon: 'ic_cookie' },
+  swiftness: { name: { pt: 'Pés Ligeiros', en: 'Light Feet' }, desc: { pt: '+10% de velocidade nesta corrida.', en: '+10% move speed this run.' }, icon: 'ic_swiftPaws' },
+  treasure: { name: { pt: 'Tesouro', en: 'Treasure' }, desc: { pt: 'Ganha moedas extras.', en: 'Gain extra coins.' }, icon: 'ic_coin' },
+  fortune: { name: { pt: 'Sorte Grande', en: 'Big Luck' }, desc: { pt: '+20% de sorte nesta corrida.', en: '+20% luck this run.' }, icon: 'ic_clover' },
+  focus: { name: { pt: 'Foco', en: 'Focus' }, desc: { pt: '−6% de recarga nesta corrida.', en: '−6% cooldown this run.' }, icon: 'ic_alarmClock' },
+  chest: { name: { pt: 'Baú Surpresa', en: 'Surprise Chest' }, desc: { pt: 'Abre um baú agora.', en: 'Open a chest right now.' }, icon: 'ic_chest' },
+  rerolls: { name: { pt: 'Dados Mágicos', en: 'Magic Dice' }, desc: { pt: '+2 rerrolagens nesta corrida.', en: '+2 rerolls this run.' }, icon: 'ic_reroll' },
+};
+
+export const achievements = [
+  { id: 'firstRun', name: { pt: 'Primeiros Passos', en: 'First Steps' }, desc: { pt: 'Termine uma corrida.', en: 'Finish a run.' }, gold: 30, check: (s) => s.stats.runs >= 1 },
+  { id: 'kills500', name: { pt: 'Caçador', en: 'Hunter' }, desc: { pt: 'Derrote 500 inimigos.', en: 'Defeat 500 enemies.' }, gold: 50, check: (s) => s.stats.kills >= 500 },
+  { id: 'kills2500', name: { pt: 'Patrulha Felina', en: 'Feline Patrol' }, desc: { pt: 'Derrote 2.500 inimigos. Libera Mimi.', en: 'Defeat 2,500 enemies. Unlocks Mimi.' }, gold: 100, check: (s) => s.stats.kills >= 2500 },
+  { id: 'kills10000', name: { pt: 'Exterminador', en: 'Exterminator' }, desc: { pt: 'Derrote 10.000 inimigos.', en: 'Defeat 10,000 enemies.' }, gold: 200, check: (s) => s.stats.kills >= 10000 },
+  { id: 'kills50000', name: { pt: 'Lenda Felina', en: 'Feline Legend' }, desc: { pt: 'Derrote 50.000 inimigos.', en: 'Defeat 50,000 enemies.' }, gold: 500, check: (s) => s.stats.kills >= 50000 },
+  { id: 'beatKingGloop', name: { pt: 'Gosma Derrotada', en: 'Gloop Popped' }, desc: { pt: 'Derrote o Rei Gosma. Libera Luna.', en: 'Defeat King Gloop. Unlocks Luna.' }, gold: 60, check: (s) => (s.stats.bossKills.kingGloop || 0) >= 1 },
+  { id: 'beatElderOak', name: { pt: 'Lenhador', en: 'Lumberjack' }, desc: { pt: 'Derrote o Ancião Carvalho. Libera Kenzo.', en: 'Defeat the Elder Oak. Unlocks Kenzo.' }, gold: 100, check: (s) => (s.stats.bossKills.elderOak || 0) >= 1 },
+  { id: 'beatYeti', name: { pt: 'Quebra-Gelo', en: 'Icebreaker' }, desc: { pt: 'Derrote o Yeti Colossal. Libera Faísca.', en: 'Defeat the Colossal Yeti. Unlocks Sparky.' }, gold: 150, check: (s) => (s.stats.bossKills.yeti || 0) >= 1 },
+  { id: 'beatCountRatula', name: { pt: 'Caça-Vampiros', en: 'Vampire Hunter' }, desc: { pt: 'Derrote o Conde Ratácula. Libera Nix.', en: 'Defeat Count Ratula. Unlocks Nix.' }, gold: 200, check: (s) => (s.stats.bossKills.countRatula || 0) >= 1 },
+  { id: 'beatCerberus', name: { pt: 'Herói do Reino', en: 'Hero of the Realm' }, desc: { pt: 'Derrote Cérbero. Libera Sir Ronronaldo e o Pesadelo I.', en: 'Defeat Cerberus. Unlocks Sir Purrcival and Nightmare I.' }, gold: 400, check: (s) => (s.stats.bossKills.cerberus || 0) >= 1 },
+  { id: 'evolve1', name: { pt: 'Evolução!', en: 'Evolution!' }, desc: { pt: 'Evolua uma arma.', en: 'Evolve a weapon.' }, gold: 60, check: (s) => Object.keys(s.stats.evolved).length >= 1 },
+  { id: 'evolve5', name: { pt: 'Colecionador', en: 'Collector' }, desc: { pt: 'Evolua 5 armas diferentes.', en: 'Evolve 5 different weapons.' }, gold: 200, check: (s) => Object.keys(s.stats.evolved).length >= 5 },
+  { id: 'evolve14', name: { pt: 'Mestre das Armas', en: 'Weapon Master' }, desc: { pt: 'Evolua todas as 14 armas.', en: 'Evolve all 14 weapons.' }, gold: 800, check: (s) => Object.keys(s.stats.evolved).length >= 14 },
+  { id: 'level30', name: { pt: 'Gato Experiente', en: 'Seasoned Cat' }, desc: { pt: 'Alcance o nível 30 em uma corrida.', en: 'Reach level 30 in a run.' }, gold: 100, check: (s) => s.stats.bestLevel >= 30 },
+  { id: 'level50', name: { pt: 'Gato Lendário', en: 'Legendary Cat' }, desc: { pt: 'Alcance o nível 50 em uma corrida.', en: 'Reach level 50 in a run.' }, gold: 250, check: (s) => s.stats.bestLevel >= 50 },
+  { id: 'survive15', name: { pt: 'Sobrevivente', en: 'Survivor' }, desc: { pt: 'Sobreviva 15 minutos em uma corrida.', en: 'Survive 15 minutes in a run.' }, gold: 150, check: (s) => s.stats.bestTime >= 900 },
+  { id: 'gold2000', name: { pt: 'Cofrinho', en: 'Piggy Bank' }, desc: { pt: 'Junte 2.000 moedas no total.', en: 'Earn 2,000 coins in total.' }, gold: 100, check: (s) => s.stats.goldEarned >= 2000 },
+  { id: 'fish50', name: { pt: 'Comilão', en: 'Big Eater' }, desc: { pt: 'Coma 50 peixes.', en: 'Eat 50 fish.' }, gold: 80, check: (s) => s.stats.fishEaten >= 50 },
+  { id: 'flawless', name: { pt: 'Intocável', en: 'Untouchable' }, desc: { pt: 'Termine uma zona sem levar dano.', en: 'Clear a zone without taking damage.' }, gold: 200, check: (s) => s.stats.flawlessZones >= 1 },
+  { id: 'nightmare1', name: { pt: 'Pesadelo Vencido', en: 'Nightmare Conquered' }, desc: { pt: 'Zere o Pesadelo I.', en: 'Beat Nightmare I.' }, gold: 500, check: (s) => s.difficultyBeaten >= 1 },
+  { id: 'nightmare5', name: { pt: 'Rei dos Pesadelos', en: 'Nightmare King' }, desc: { pt: 'Zere o Pesadelo V.', en: 'Beat Nightmare V.' }, gold: 1500, check: (s) => s.difficultyBeaten >= 5 },
+];

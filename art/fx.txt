@@ -1,0 +1,463 @@
+# Projectiles and effects. Grayscale sprites marked (tint) are colored in code.
+sprite pj_yarn
+keys: s=gray1 S=gray2 d=gray3
+frame
+..WWWs..
+.WWWsWW.
+WWWsWWsW
+WWsWWsWW
+WsWWsWWS
+sWWsWWSS
+.WsWWSS.
+..sSSd..
+end
+
+sprite pj_yarn_cosmic
+keys: p=purple4 P=purple2 d=purple5 y=yellow2
+frame
+....pPpp....
+..ppPppPpp..
+.pPppPpWpPp.
+.pppPpppPpp.
+pPppPpppPppd
+pppPpyppPpdd
+ppPpppPppPdd
+pPppppPpPpdd
+.ppWpPppPdd.
+.pPppPpPddd.
+..dpPpdddd..
+....dddd....
+end
+
+sprite pj_fish
+keys: b=blue3 t=blue4 w=blue1
+frame
+......bbb...
+t...bbbbbbb.
+tt.bbbbbbWkb
+ttbbbbbbbbbb
+tt.wwwwwwwb.
+t...wwwww...
+end
+
+sprite pj_shark
+keys: g=gray3 G=gray4 w=white
+frame
+.........G..........
+........GG..........
+G......GGgg.........
+GG..ggggggggggg.....
+GGggggggggggggggg...
+GGgggggggggggWkggg..
+GG.ggggggggggggggggg
+G...wwwwwwwwwkWkWkW.
+......wwwwwwwwwwwww.
+........wwwwwww.....
+end
+
+sprite pj_milk
+keys: g=gray1 G=gray2 b=blue3
+frame
+..bb..
+..bb..
+..gg..
+.gWWg.
+gWWWWG
+gbbbbG
+gbWbbG
+gWWWWG
+gWWWWG
+.gGGG.
+end
+
+sprite pj_milk_star from=pj_milk swap=white>purple1,blue3>yellow3,gray1>purple2,gray2>purple3
+
+sprite pj_crane
+keys: a=pink1 b=pink2 c=pink3
+frame
+...a......
+...aa....a
+...aba..aa
+a..abbaaa.
+aaaaabaa..
+.baaaaab..
+..bbbbb...
+end
+
+sprite pj_crane_gold from=pj_crane swap=pink1>yellow2,pink2>yellow3,pink3>yellow4
+
+sprite pj_shuriken
+keys: g=gray2 G=gray3
+frame
+..g....
+..gg...
+...Wggg
+.gWkWg.
+gggWG..
+...gg..
+....g..
+end
+
+sprite pj_shuriken_evo
+keys: g=gray1 G=gray3 p=purple3
+frame
+...p.....
+...pg....
+....gg...
+....Wgggp
+.gGWkWg..
+pgggWG...
+...gg....
+....gp...
+.....p...
+end
+
+sprite pj_bullet
+keys: y=yellow3 Y=orange3
+frame
+yYY.
+yWWY
+yYY.
+end
+
+sprite pj_missile
+keys: g=gray2 r=red3 f=orange3
+frame
+f..ggg..
+ffgggggr
+ffgggggr
+f..ggg..
+end
+
+sprite pj_rocket
+keys: d=gray3 g=gray1
+frame
+d.WWWW..
+dWWWWWWg
+dWWWWWWg
+d.WWWW..
+end
+
+sprite fx_puff outlineColor=gray2
+keys: s=gray1
+frame
+........
+........
+...WW...
+..WWWs..
+..WWss..
+...ss...
+........
+........
+frame
+........
+..WWW...
+.WWWWW..
+.WWWWss.
+.WWWsss.
+..Wsss..
+...ss...
+........
+frame
+.WWW....
+WWWWW.W.
+WWW.WWWW
+WW...WWs
+.W...WWs
+.WW.WWss
+..WWsss.
+...ss...
+frame
+.W......
+WW....W.
+W.......
+........
+......W.
+.......s
+.W....ss
+..s.....
+end
+
+sprite fx_spark outline=0
+frame
+.W.
+WWW
+.W.
+end
+
+sprite fx_star outline=0
+frame
+..W..
+.WWW.
+WWWWW
+.WWW.
+..W..
+end
+
+sprite fx_confetti outline=0
+frame
+WW
+WW
+WW
+end
+
+sprite fx_drop outline=0
+frame
+WW
+WW
+end
+
+sprite fx_heart
+keys: r=red2 R=red3
+frame
+.r.r.
+rWrrR
+rrrrR
+.rrR.
+..R..
+end
+
+sprite fx_shard outline=0
+keys: b=brown3 B=brown4
+frame
+bb.
+bBb
+.bB
+end
+
+sprite fx_root
+keys: b=brown3 B=brown4 g=green3
+frame
+...b....
+...bb...
+..bbb...
+..bBb.g.
+.bbBbgg.
+.bBBb...
+bbBBbb..
+bBBBBb..
+BBBBBBB.
+.BBBBB..
+end
+
+sprite fx_bat
+keys: p=purple5 r=red2
+frame
+p.....p
+pp.p.pp
+.ppppp.
+..prp..
+end
+
+sprite fx_leaf outlineColor=green6
+keys: g=green3 G=green5
+frame
+..gg.
+.gGgg
+gGgg.
+.g...
+end
+
+sprite fx_snow outlineColor=blue3
+keys: b=blue1
+frame
+.W.
+WbW
+.W.
+end
+
+sprite fx_ice outline=0
+keys: W=white@0.85 b=blue2@0.7 B=blue3@0.8
+frame
+....W.......
+...WbW..W...
+...WbW.WbW..
+..WbbbWWbW..
+..WbbbbWbbW.
+.WbbBbbbbbW.
+.WbBBbbBbbbW
+WbbBbbbBBbbW
+WbbbbbbbbbBW
+.WbbbbbbbBW.
+..WWbbbbWW..
+....WWWW....
+end
+
+sprite pj_orb
+keys: b=blue1 B=blue2
+frame
+..bbbb..
+.bWWbbb.
+bWWbbbbB
+bWbbbbbB
+bbbbbbBB
+bbbbbBBB
+.bbBBBB.
+..BBBB..
+end
+
+sprite pj_orb_moon
+keys: y=yellow2 Y=yellow3 l=yellow1
+frame
+...lyyy..
+..lyy....
+.lyy.....
+.ly......
+.yy......
+.yYy.....
+..yYyy..y
+...YYYYY.
+end
+
+sprite pj_orb_sun
+keys: o=orange3 y=yellow3 l=yellow1
+frame
+....o....
+.o.ooo.o.
+..ooyoo..
+.ooyyyoo.
+ooyylyyoo
+.ooyyyoo.
+..ooyoo..
+.o.ooo.o.
+....o....
+end
+
+sprite pj_drone
+keys: g=gray2 G=gray3 p=pink3 r=red2 d=gray4
+frame
+.dddddddd.
+.....k....
+..gg.k.gg.
+.gppgggpg.
+.gggggggg.
+ggggggWrgk
+gGgggggggg
+.GGGGGGGG.
+..d....d..
+frame
+....dd....
+.....k....
+..gg.k.gg.
+.gppgggpg.
+.gggggggg.
+ggggggWrgk
+gGgggggggg
+.GGGGGGGG.
+..d....d..
+end
+
+sprite pj_drone_evo from=pj_drone swap=gray2>red2,gray3>red3,red2>yellow2
+
+sprite pj_ghostcat
+keys: v=purple1 V=purple2 m=mint2 p=pink2
+frame
+.v.....v...
+vvv...vvv..
+vvvvvvvvv..
+vvWmvvWmv..
+vvmmvvmmvv.
+vVvvvpvvvvv
+.vvvvvvvvvv
+..vvvvvvv.v
+...V.vV.vV.
+frame
+.v.....v...
+vvv...vvv..
+vvvvvvvvv..
+vvWmvvWmv..
+vvmmvvmmvv.
+vVvvvpvvvvv
+.vvvvvvvvv.
+..vvvvvvvvv
+..V.vV.vV..
+end
+
+sprite font_0 outline=8
+frame
+WWW
+W.W
+W.W
+W.W
+WWW
+end
+sprite font_1 outline=8
+frame
+.W.
+WW.
+.W.
+.W.
+WWW
+end
+sprite font_2 outline=8
+frame
+WWW
+..W
+WWW
+W..
+WWW
+end
+sprite font_3 outline=8
+frame
+WWW
+..W
+.WW
+..W
+WWW
+end
+sprite font_4 outline=8
+frame
+W.W
+W.W
+WWW
+..W
+..W
+end
+sprite font_5 outline=8
+frame
+WWW
+W..
+WWW
+..W
+WWW
+end
+sprite font_6 outline=8
+frame
+WWW
+W..
+WWW
+W.W
+WWW
+end
+sprite font_7 outline=8
+frame
+WWW
+..W
+..W
+.W.
+.W.
+end
+sprite font_8 outline=8
+frame
+WWW
+W.W
+WWW
+W.W
+WWW
+end
+sprite font_9 outline=8
+frame
+WWW
+W.W
+WWW
+..W
+WWW
+end
+sprite font_plus outline=8
+frame
+...
+.W.
+WWW
+.W.
+...
+end

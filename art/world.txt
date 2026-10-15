@@ -1,9 +1,4 @@
-# Purrvivors world art: ground tiles, flat decor, breakable props (anchor=cx,8 so they stand on the game shadow), boss-arena post
 
-# ---------------- GROUND TILES (16x16, outline=0, seamless; tile _0 is the cleanest and used most)
-# Seamless rule: organic tiles keep a 1px border of pure base colour; gr_crypt_* share identical borders and the same
-# flagstone joint skeleton (mortar rows 0 and 9, vertical joints at col 0 / col 6), so any mix of variants tiles cleanly.
-# gr_abyss_*: only _1 carries bright lava; _2 and _3 are cool red cracks so the glow stays sparse.
 sprite gr_meadow_0 outline=0
 keys: g=green3 G=green4 l=green2
 frame
@@ -424,7 +419,6 @@ ggggbbggggghgggg
 gggggggggggggggg
 end
 
-# ---------------- DECOR: MEADOW
 sprite de_flower_0 outline=0
 keys: P=pink2 p=pink3 d=pink4 y=yellow3 Y=yellow2 s=green4 S=green5 l=green2
 frame
@@ -503,7 +497,6 @@ frame
 .GGGGG.GGG
 end
 
-# ---------------- DECOR: WOODS
 sprite de_leaf_0 outline=0
 keys: l=orange2 o=orange3 O=orange4 v=orange5 t=brown4
 frame
@@ -563,7 +556,6 @@ dBd........dBd
 ddd........ddd
 end
 
-# ---------------- DECOR: PEAKS
 sprite de_snowpile outline=4 outlineColor=blue3
 keys: W=white s=blue1 b=blue2
 frame
@@ -621,7 +613,6 @@ GGGGdGGGdd
 .dddddddd.
 end
 
-# ---------------- DECOR: CRYPT
 sprite de_bones outline=0
 keys: W=white w=cream g=gray2 G=gray3
 frame
@@ -706,7 +697,6 @@ mMgggggggM
 GGGGGGGGGG
 end
 
-# ---------------- DECOR: ABYSS
 sprite de_lavacrack outline=0
 keys: r=red5 o=orange3 y=yellow3
 frame
@@ -768,7 +758,6 @@ uuukkkk
 .kkkkk.
 end
 
-# ---------------- PROPS (breakable, default ink outline)
 sprite prop_pot anchor=6,8
 keys: l=orange2 o=orange3 O=orange4 d=orange5 b=blue3 B=blue4 c=blue2 w=cream
 frame
@@ -864,7 +853,6 @@ lllllllllllg
 .gg..gg..gg.
 end
 
-# ---------------- ARENA
 sprite ar_post
 keys: W=white l=pink1 P=pink2 p=pink3 m=pink4 n=pink5 M=purple3 v=purple4 V=purple5 g=gray2 G=gray3 h=gray4
 frame

@@ -20,7 +20,7 @@ const noop = () => {};
 function makeEnemy() {
   return {
     id: 0, def: null, type: '', sprite: '', x: 0, y: 0, kx: 0, ky: 0, r: 5, hp: 1, maxHp: 1, speed: 0, dmg: 0, xp: 0,
-    mass: 1, armor: 0, flash: 0, slowT: 0, slowAmt: 0, freezeT: 0, bleedT: 0, bleedDps: 0, bleedSlot: -1, animT: 0,
+    mass: 1, armor: 0, flash: 0, flashCd: 0, slowT: 0, slowAmt: 0, freezeT: 0, bleedT: 0, bleedDps: 0, bleedSlot: -1, animT: 0,
     facing: 1, state: 0, stateT: 0, dirX: 0, dirY: 0, elite: false, boss: false, prop: false, flying: false, scale: 1,
     spawnT: 0, behavior: '', shotT: 0, hitCds: new Float64Array(20), alpha: 1, swarm: false, eliteDef: null,
     bossDef: null, ai: null, hopZ: 0, summonT: 0, propKind: '', noSeparate: false, lastHitSlot: -1, moving: false,
@@ -334,6 +334,7 @@ export class World {
     enemy.kx = 0;
     enemy.ky = 0;
     enemy.flash = 0;
+    enemy.flashCd = 0;
     enemy.slowT = 0;
     enemy.slowAmt = 0;
     enemy.freezeT = 0;
@@ -589,6 +590,7 @@ export class World {
       if (e.hp <= 0) continue;
       e.animT += dt;
       if (e.flash > 0) e.flash -= dt;
+      if (e.flashCd > 0) e.flashCd -= dt;
       if (e.spawnT > 0) e.spawnT -= dt;
       if (e.bleedT > 0) {
         e.bleedT -= dt;
@@ -866,7 +868,11 @@ export class World {
     if (e.armor > 0) damage *= 1 - e.armor;
     damage = Math.max(1, Math.round(damage));
     e.hp -= damage;
-    if (!options.noFlash) e.flash = 0.12;
+    if (!options.noFlash && e.flashCd <= 0) {
+      const big = e.boss || e.elite;
+      e.flash = big ? 0.07 : 0.1;
+      e.flashCd = big ? 0.32 : 0.2;
+    }
     if (options.knockback && !e.boss && !e.prop) {
       const resist = e.elite ? 0.15 : 1 / e.mass;
       let kx = options.kx;

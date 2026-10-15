@@ -297,11 +297,12 @@ export class View {
       const pulse = 0.35 + Math.sin(this.time * 4 + e.id) * 0.12;
       r.draw(this.frame('glow_64'), e.x, e.y - z, radius / 16, radius / 16, 0, withAlpha(hexColor('#ff6a6a'), pulse), 0, true);
     }
+    const flash = e.flash > 0 ? (e.boss || e.elite ? 0.55 : 1) : 0;
     if (e.boss && e.ai && e.ai.airborne) {
-      r.draw(frame, e.x, e.y - z, sx, sy, 0, color, e.flash > 0 ? 1 : 0);
+      r.draw(frame, e.x, e.y - z, sx, sy, 0, color, flash);
       return;
     }
-    r.draw(frame, e.x, e.y - z, sx, sy, 0, color, e.flash > 0 ? 1 : 0);
+    r.draw(frame, e.x, e.y - z, sx, sy, 0, color, flash);
     if (frozen) r.draw(this.frame('fx_ice'), e.x, e.y + radius * 0.3, radius / 6, radius / 6, 0, withAlpha(white, 0.7));
   }
 

@@ -1,13 +1,4 @@
-# Zone bosses (2 frames each, front-facing, default outline). Light from the top-left.
-# frame 0 = idle / base pose, frame 1 = alternate pose of the move cycle.
-# bo_kinggloop  Rei Gosma         zone 1 meadow
-# bo_elderoak   Ancião Carvalho   zone 2 forest
-# bo_yeti       Yeti Colossal     zone 3 snow
-# bo_ratula     Conde Ratácula    zone 4 crypt
-# bo_cerberus   Cérbero           zone 5 volcanic abyss (final)
 
-# Rei Gosma (zone 1 meadow boss): slime king with a gem crown, goo drips and bubbles.
-# frame 0 = tall idle, frame 1 = squashed / wider (the hop landing).
 sprite bo_kinggloop
 keys: h=green1 l=green2 g=green3 G=green4 D=green5 p=pink2 P=pink3 y=yellow2 Y=yellow3 O=yellow4 Z=yellow5 r=red2 R=red3 E=red4 b=blue2 B=blue3 N=blue5
 frame
@@ -82,9 +73,6 @@ llggghhggggggggkkkkkkkkkkkkggggghhhgGGGGDD
 .......DD..DDD....DDDDDD...DDDD...D.......
 end
 
-# Ancião Carvalho (zone 2 forest boss): grumpy walking tree, moss beard, acorn crown.
-# frames swap the branch arms and root legs and rustle the canopy.
-# anchor: pivot raised so the feet meet the game shadow (drawn at y + 0.8*radius = +16).
 sprite bo_elderoak anchor=23,29
 keys: t=brown2 T=brown3 u=brown4 U=brown5 h=green1 l=green2 g=green3 G=green4 D=green5 s=gray1 S=gray2 q=orange2 o=orange3 O=orange4 Y=yellow3 p=pink2 r=red3 R=red4
 frame
@@ -187,9 +175,6 @@ G.lG......tutThGllglllgglglgggGGuuuuU...TuTTul
 .....................w....w...UU.UUUU..UU.....
 end
 
-# Yeti Colossal (zone 3 snow boss): fluffy yeti, blue face, ram horns, giant blue fists.
-# frame 0 = roar, frame 1 = head dips, fists and feet swap.
-# anchor: pivot raised so the feet meet the game shadow (drawn at y + 0.8*radius = +16).
 sprite bo_yeti anchor=21,24
 keys: f=gray1 F=gray2 z=gray3 b=blue2 B=blue3 N=blue4 n=blue5 E=red4 P=pink3 p=pink2 a=brown1 A=brown2 C=brown4 i=blue1 I=blue2 J=blue3
 frame
@@ -280,8 +265,6 @@ WWWFffFFFFFzFfWWWWFWWWWWWWWffFWWfffffFFFzz
 .......................nnnnnn.............
 end
 
-# Conde Ratácula (zone 4 crypt boss): floating vampire rat, caped, monocle, bat buddy.
-# frame 0 = low, frame 1 = high float bob; cape hem ripples, bat flaps.
 sprite bo_ratula
 keys: s=gray1 S=gray2 z=gray3 p=pink2 P=pink3 q=pink4 d=purple6 D=purple5 v=purple4 x=gray6 l=red2 r=red3 R=red4 e=red5 y=yellow2 Y=yellow3 O=yellow4
 frame
@@ -368,8 +351,6 @@ v.......v...........................
 ....................................
 end
 
-# Cérbero (zone 5 final boss): fire / void / ice heads, spiked red collars, lava glow.
-# heads see-saw (sides up + roar, then middle up + roar), front paws step.
 sprite bo_cerberus
 keys: a=gray3 b=gray4 c=gray5 d=gray6 o=orange3 q=orange2 O=orange4 u=orange5 1=orange1 y=yellow2 Y=yellow3 Z=yellow4 v=purple4 V=purple3 m=purple5 M=purple6 p=purple2 i=blue3 I=blue2 j=blue4 J=blue5 h=blue1 r=red3 R=red4 e=red5 l=red2 s=gray1 S=gray2 P=pink3 g=pink2 E=red4
 frame

@@ -1,6 +1,3 @@
-// Final boss, Cerberus - epic E minor with lifts to G and C major, 164 bpm.
-// Form: A (triple bark) / A' / B (heroic lift) / C (breakdown) / D (G major lift) / E (final stand), 24 patterns.
-
 // VARIABLES
 const a1c = 'kc . h . S . h . k . h k S . h .';
 const a1 = 'k . h . S . h . k . h k S . h .';
@@ -32,8 +29,6 @@ export default {
     drums: { volume: 0.3 },
   },
   patterns: {
-    // A  - Cerberus awakens: the triple bark (three heads) on a menacing Em riff
-    // Em | Em
     A1: {
       lead: 'E5 E5 E5 - B5 . . . G5 G5 G5 - E5 . . . E5 E5 E5 - B5 . . . D6 . . B5 G5 . . .',
       harmony: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -',
@@ -41,7 +36,6 @@ export default {
       arp: 'Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . .',
       drums: a1c + ' ' + a1,
     },
-    // C | D
     A2: {
       lead: 'C5 C5 C5 - G5 . . . E5 E5 E5 - C5 . . . D5 D5 D5 - A5 . . . F#5 F#5 F#5 - A5 . . .',
       harmony: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -',
@@ -49,7 +43,6 @@ export default {
       arp: 'Cmaj4 . . . Cmaj4 . . . Cmaj4 . . . Cmaj4 . . . Dmaj4 . . . Dmaj4 . . . Dmaj4 . . . Dmaj4 . . .',
       drums: a1 + ' ' + a1,
     },
-    // Em | Em
     A3: {
       lead: 'B5 . G5 . E5 . G5 . B5 . . . E6 . . . D6 . . . B5 . . . G5 . B5 . E6 . . .',
       harmony: 'B4 . G4 . E4 . G4 . B4 . . . E5 . . . D5 . . . B4 . . . G4 . B4 . E5 . . .',
@@ -57,7 +50,6 @@ export default {
       arp: 'Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . . Emin4 . . .',
       drums: a2 + ' ' + a2,
     },
-    // C | Bm
     A4: {
       lead: 'C6 . . . G5 . . . E5 . G5 . C6 . . . B4 C5 D5 E5 F#5 G5 A5 B5 F#6 . E6 . D6 . B5 .',
       harmony: 'C5 . . . G4 . . . E4 . G4 . C5 . . . B3 C4 D4 E4 F#4 G4 A4 B4 F#5 . E5 . D5 . B4 .',
@@ -65,8 +57,6 @@ export default {
       arp: 'Cmaj4 . . . Cmaj4 . . . Cmaj4 . . . Cmaj4 . . . B54 . . . B54 . . . B54 . . . B54 . . .',
       drums: a2 + ' ' + aF,
     },
-    // A' - the bark again in fifths, answers climb
-    // Em | Em
     V1: {
       lead: 'E5 E5 E5 - B5 . . . G5 G5 G5 - E5 . . . E5 E5 E5 - B5 . . . E6 . . D6 B5 . . .',
       harmony: 'A4 A4 A4 - E5 . . . C5 C5 C5 - A4 . . . A4 A4 A4 - E5 . . . A5 . . G5 E5 . . .',
@@ -74,7 +64,6 @@ export default {
       arp: 'Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 .',
       drums: b1c + ' ' + b1,
     },
-    // C | D
     V2: {
       lead: 'C5 C5 C5 - G5 . . . C6 . . B5 G5 . . . D5 D5 D5 - A5 . . . D6 . . C6 A5 . . .',
       harmony: 'G4 G4 G4 - C5 . . . G5 . . E5 C5 . . . G4 G4 G4 - D5 . . . G5 . . G5 D5 . . .',
@@ -82,7 +71,6 @@ export default {
       arp: 'Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 .',
       drums: b1 + ' ' + b1,
     },
-    // Em | C
     V3: {
       lead: 'G5 . B5 . E6 . G6 . F#6 . . . E6 . . . E6 . C6 . G5 . C6 . E6 . . . G6 . . .',
       harmony: 'C5 . E5 . A5 . C6 . B5 . . . A5 . . . A5 . G5 . C5 . G5 . A5 . . . C6 . . .',
@@ -90,7 +78,6 @@ export default {
       arp: 'Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 .',
       drums: b1 + ' ' + b1,
     },
-    // D | Bm
     V4: {
       lead: 'F#6 . . . D6 . . . A5 . D6 . F#6 . . . B5 C6 D6 E6 F#6 G6 F#6 E6 D6 . . . B5 . . .',
       harmony: 'B5 . . . G5 . . . D5 . G5 . B5 . . . E5 G5 G5 A5 B5 C6 B5 A5 G5 . . . E5 . . .',
@@ -98,8 +85,6 @@ export default {
       arp: 'Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 .',
       drums: b1 + ' ' + bF,
     },
-    // B  - heroic lift: C and G major colours over a galloping bass
-    // C | G
     B1: {
       lead: 'E6 . . . . . D6 . C6 . . . G5 . . . D6 . . . . . C6 . B5 . . . G5 . . .',
       harmony: 'C6 . . . . . B5 . A5 . . . E5 . . . B5 . . . . . A5 . G5 . . . E5 . . .',
@@ -107,7 +92,6 @@ export default {
       arp: 'Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 .',
       drums: h1c + ' ' + h1,
     },
-    // D | Em
     B2: {
       lead: 'A5 . . . . . B5 . A5 . . . F#5 . . . G5 . . . B5 . . . E6 . . . . . . .',
       harmony: 'F#5 . . . . . G5 . F#5 . . . D5 . . . E5 . . . G5 . . . C6 . . . . . . .',
@@ -115,7 +99,6 @@ export default {
       arp: 'Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 .',
       drums: h1 + ' ' + h2,
     },
-    // C | G
     B3: {
       lead: 'E6 . . . . . G6 . E6 . . . C6 . . . D6 . . . . . G6 . D6 . . . B5 . . .',
       harmony: 'C6 . . . . . E6 . C6 . . . A5 . . . B5 . . . . . E6 . B5 . . . G5 . . .',
@@ -123,7 +106,6 @@ export default {
       arp: 'Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 .',
       drums: h1 + ' ' + h1,
     },
-    // Bm | Bm
     B4: {
       lead: 'F#6 . . . . . E6 . D6 . . . B5 . . . B5 . . . A5 . F#5 . B5 . . . . . - -',
       harmony: 'D6 . . . . . C6 . B5 . . . G5 . . . G5 . . . F#5 . D5 . G5 . . . . . - -',
@@ -131,8 +113,6 @@ export default {
       arp: 'B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 .',
       drums: h1 + ' ' + hF,
     },
-    // C  - breakdown: tom rolls and a rising line over Em / Am pedals
-    // Em | Em
     C1: {
       lead: 'B5 . . . . . . . . . . . . . . . B5 . . . . . . . . . . . A5 . B5 .',
       harmony: 'E4 . . . . . . . . . . . . . . . E4 . . . . . . . . . . . . . . .',
@@ -140,7 +120,6 @@ export default {
       arp: 'E54 . . . . . . . . . . . . . . . E54 . . . . . . . . . . . . . . .',
       drums: t1 + ' ' + t1,
     },
-    // Am | Am
     C2: {
       lead: 'C6 . . . . . . . B5 . . . . . . . A5 . . . . . . . . . . . B5 . C6 .',
       harmony: 'A4 . . . . . . . . . . . . . . . A4 . . . . . . . . . . . . . . .',
@@ -148,7 +127,6 @@ export default {
       arp: 'Amin4 . . . . . . . . . . . . . . . Amin4 . . . . . . . . . . . . . . .',
       drums: t2 + ' ' + t2,
     },
-    // C | D
     C3: {
       lead: 'E6 . . . . . . . . . . . D6 . E6 . F#6 . . . . . . . . . . . E6 . D6 .',
       harmony: 'G4 . . . . . . . . . . . . . . . A4 . . . . . . . . . . . . . . .',
@@ -156,7 +134,6 @@ export default {
       arp: 'Cmaj4 . . . Cmaj4 . . . Cmaj4 . . . Cmaj4 . . . Dmaj4 . . . Dmaj4 . . . Dmaj4 . . . Dmaj4 . . .',
       drums: t3 + ' ' + t3,
     },
-    // Bm | Bm
     C4: {
       lead: 'D6 . . . . . . . B5 . . . . . . . B4 C5 D5 E5 F#5 G5 A5 B5 C6 D6 E6 F#6 G6 . . .',
       harmony: 'F#4 . . . . . . . . . . . . . . . F#4 . . . . . . . . . . . . . . .',
@@ -164,8 +141,6 @@ export default {
       arp: 'B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 . B54 .',
       drums: c1 + ' ' + t4,
     },
-    // D  - the lift to G major, the highest and brightest moment
-    // G | D
     D1: {
       lead: 'B5 . . . D6 . . . G6 . . . . . . . F#6 . . . . . E6 . D6 . . . . . . .',
       harmony: 'B4 . . . D5 . . . G5 . . . . . . . F#5 . . . . . E5 . D5 . . . . . . .',
@@ -173,7 +148,6 @@ export default {
       arp: 'Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 .',
       drums: e1 + ' ' + h2,
     },
-    // Em | C
     D2: {
       lead: 'G6 . . . . . F#6 . E6 . . . B5 . . . E6 . . . . . D6 . C6 . . . G5 . . .',
       harmony: 'G5 . . . . . F#5 . E5 . . . B4 . . . E5 . . . . . D5 . C5 . . . G4 . . .',
@@ -181,7 +155,6 @@ export default {
       arp: 'Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 .',
       drums: h2 + ' ' + h2,
     },
-    // G | D
     D3: {
       lead: 'D6 . . . B5 . . . G6 . . . . . . . F#6 . . . A5 . . . D6 . . . . . . .',
       harmony: 'D5 . . . B4 . . . G5 . . . . . . . F#5 . . . A4 . . . D5 . . . . . . .',
@@ -189,7 +162,6 @@ export default {
       arp: 'Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 .',
       drums: h2 + ' ' + h2,
     },
-    // C | D
     D4: {
       lead: 'C6 . . . E6 . . . G6 . . . . . . . A5 . B5 . A5 . F#5 . D5 . . . . . . .',
       harmony: 'C5 . . . E5 . . . G5 . . . . . . . A4 . B4 . A4 . F#4 . D4 . . . . . . .',
@@ -197,8 +169,6 @@ export default {
       arp: 'Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 .',
       drums: h2 + ' ' + hF,
     },
-    // E  - final stand back in E minor, rolls on the dominant into the loop
-    // Em | C
     E1: {
       lead: 'E5 E5 E5 - B5 . . . E6 E6 E6 - B5 . . . C6 C6 C6 - G5 . . . E6 E6 E6 - G6 . . .',
       harmony: 'A4 A4 A4 - E5 . . . A5 A5 A5 - E5 . . . G5 G5 G5 - C5 . . . A5 A5 A5 - C6 . . .',
@@ -206,7 +176,6 @@ export default {
       arp: 'Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 .',
       drums: e1 + ' ' + h2,
     },
-    // G | D
     E2: {
       lead: 'D6 D6 D6 - B5 . . . G6 G6 G6 - D6 . . . A5 A5 A5 - F#6 . . . D6 D6 D6 - A5 . . .',
       harmony: 'G5 G5 G5 - E5 . . . C6 C6 C6 - G5 . . . D5 D5 D5 - B5 . . . G5 G5 G5 - D5 . . .',
@@ -214,7 +183,6 @@ export default {
       arp: 'Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Gmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 . Dmaj4 .',
       drums: h2 + ' ' + h2,
     },
-    // Em | C
     E3: {
       lead: 'G5 . . . B5 . . . E6 . . . G6 . . . E6 . . . . . G6 . E6 . . . C6 . . .',
       harmony: 'C5 . . . E5 . . . A5 . . . C6 . . . A5 . . . . . C6 . A5 . . . G5 . . .',
@@ -222,7 +190,6 @@ export default {
       arp: 'Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Emin4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 . Cmaj4 .',
       drums: h2 + ' ' + h2,
     },
-    // Bm | Bm
     E4: {
       lead: 'D6 . . . . . E6 . F#6 . . . D6 . . . B5 C6 D6 E6 F#6 E6 D6 C6 B5 . . . - - - -',
       harmony: 'G5 . . . . . A5 . B5 . . . G5 . . . E5 G5 G5 A5 B5 A5 G5 G5 E5 . . . - - - -',

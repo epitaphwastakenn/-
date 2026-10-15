@@ -1,6 +1,3 @@
-// Boss fights (zones 1-4) - urgent C minor, 156 bpm, ostinato bass riff.
-// Form: A (stutter-chant hook) / B (soaring chorus) / A' / B' (final chorus, ends on Bb (bVII)).
-
 // VARIABLES
 const o1c = 'kc . h h S . h . k . k h S . h h';
 const o1 = 'k . h h S . h . k . k h S . h h';
@@ -23,8 +20,6 @@ export default {
     drums: { volume: 0.3 },
   },
   patterns: {
-    // A  - stutter-chant hook over the riff, siren joins in the second half
-    // Cm | Cm
     A1: {
       lead: 'G5 . G5 . G5 . C6 . Eb6 . . . C6 . G5 . G5 . G5 . G5 . Bb5 . C6 . . . Bb5 . G5 .',
       harmony: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -',
@@ -32,7 +27,6 @@ export default {
       arp: '- - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 .',
       drums: o1c + ' ' + o1,
     },
-    // Ab | Bb
     A2: {
       lead: 'Eb5 . Eb5 . Eb5 . Ab5 . C6 . . . Ab5 . Eb5 . F5 . F5 . F5 . Bb5 . D6 . . . Bb5 . F5 .',
       harmony: '- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -',
@@ -40,7 +34,6 @@ export default {
       arp: '- - Abmaj4 . - - Abmaj4 . - - Abmaj4 . - - Abmaj4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 .',
       drums: o2 + ' ' + o1,
     },
-    // Cm | Cm
     A3: {
       lead: 'C6 - C6 . Bb5 . G5 . Eb5 . G5 . C6 . . . Bb5 . G5 . Eb5 . G5 . Bb5 . . . C6 . . .',
       harmony: 'G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6',
@@ -48,7 +41,6 @@ export default {
       arp: '- - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 .',
       drums: o1 + ' ' + o2,
     },
-    // Fm | Bb
     A4: {
       lead: 'Ab5 . Ab5 . C6 . F6 . Eb6 . . . C6 . Ab5 . Bb5 . Bb5 . D6 . F6 . D6 . . . - - - -',
       harmony: 'Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6',
@@ -56,8 +48,6 @@ export default {
       arp: '- - Fmin4 . - - Fmin4 . - - Fmin4 . - - Fmin4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 .',
       drums: o1 + ' ' + oF,
     },
-    // B  - soaring chorus
-    // Ab | Bb
     B1: {
       lead: '- - C6 . Eb6 . . . D6 . C6 . Ab5 . . . - - D6 . F6 . . . Eb6 . D6 . Bb5 . . .',
       harmony: '- - Ab5 . C6 . . . Bb5 . Ab5 . F5 . . . - - Bb5 . D6 . . . C6 . Bb5 . G5 . . .',
@@ -65,7 +55,6 @@ export default {
       arp: 'Abmaj4 . . . . . . . . . . . . . . . Bbmaj4 . . . . . . . . . . . . . . .',
       drums: p1c + ' ' + p1,
     },
-    // Cm | Cm
     B2: {
       lead: '- - Eb6 . G6 . . . F6 . Eb6 . C6 . . . Bb5 . C6 . D6 . Eb6 . C6 . . . . . . .',
       harmony: '- - C6 . Eb6 . . . D6 . C6 . Ab5 . . . G5 . Ab5 . Bb5 . C6 . Ab5 . . . . . . .',
@@ -73,7 +62,6 @@ export default {
       arp: 'Cmin4 . . . . . . . . . . . . . . . Cmin4 . . . . . . . . . . . . . . .',
       drums: p2 + ' ' + p1,
     },
-    // Ab | Bb
     B3: {
       lead: '- - C6 . Eb6 . . . F6 . Eb6 . C6 . . . - - D6 . F6 . . . G6 . F6 . D6 . . .',
       harmony: '- - Ab5 . C6 . . . D6 . C6 . Ab5 . . . - - Bb5 . D6 . . . Eb6 . D6 . Bb5 . . .',
@@ -81,7 +69,6 @@ export default {
       arp: 'Abmaj4 . . . . . . . . . . . . . . . Bbmaj4 . . . . . . . . . . . . . . .',
       drums: p1 + ' ' + p1,
     },
-    // Gm | Bb
     B4: {
       lead: 'Bb5 . D6 . G6 . . . F6 . D6 . Bb5 . . . F5 . Bb5 . D6 . F6 . D6 . . . - - - -',
       harmony: 'G5 . Bb5 . Eb6 . . . D6 . Bb5 . G5 . . . D5 . G5 . Bb5 . D6 . Bb5 . . . - - - -',
@@ -89,8 +76,6 @@ export default {
       arp: 'Gmin4 . . . . . . . . . . . . . . . Bbmaj4 . . . . . . . . . . . . . . .',
       drums: p2 + ' ' + oFF,
     },
-    // A' - hook returns, octave-low double
-    // Cm | Cm
     V1: {
       lead: 'G5 . G5 . G5 . C6 . Eb6 . . . C6 . G5 . G5 G5 G5 . G5 . Bb5 . C6 . . . Bb5 . G5 .',
       harmony: 'G4 . G4 . G4 . C5 . Eb5 . . . C5 . G4 . G4 G4 G4 . G4 . Bb4 . C5 . . . Bb4 . G4 .',
@@ -98,7 +83,6 @@ export default {
       arp: '- - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 .',
       drums: o1c + ' ' + o2,
     },
-    // Ab | Bb
     V2: {
       lead: 'Eb5 Eb5 Eb5 . Eb5 . Ab5 . C6 . . . Ab5 . Eb5 . F5 F5 F5 . F5 . Bb5 . D6 . . . Bb5 . F5 .',
       harmony: 'Eb4 Eb4 Eb4 . Eb4 . Ab4 . C5 . . . Ab4 . Eb4 . F4 F4 F4 . F4 . Bb4 . D5 . . . Bb4 . F4 .',
@@ -106,7 +90,6 @@ export default {
       arp: '- - Abmaj4 . - - Abmaj4 . - - Abmaj4 . - - Abmaj4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 .',
       drums: o2 + ' ' + o1,
     },
-    // Cm | Eb
     V3: {
       lead: 'C6 - C6 . Bb5 . G5 . Eb5 . G5 . C6 . . . Bb5 . G5 . Eb5 . G5 . Bb5 . C6 . Eb6 . . .',
       harmony: 'G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 C6 G5 Bb5 G5 Bb5 G5 Bb5 G5 Bb5 G5 Bb5 G5 Bb5 G5 Bb5 G5 Bb5',
@@ -114,7 +97,6 @@ export default {
       arp: '- - Cmin4 . - - Cmin4 . - - Cmin4 . - - Cmin4 . - - Ebmaj4 . - - Ebmaj4 . - - Ebmaj4 . - - Ebmaj4 .',
       drums: o1 + ' ' + o2,
     },
-    // Fm | Bb
     V4: {
       lead: 'Ab5 . Ab5 . C6 . F6 . G6 . . . F6 . Eb6 . D6 . D6 . Bb5 . F5 . Bb5 . D6 . F6 . . .',
       harmony: 'Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Ab5 C6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6 Bb5 D6',
@@ -122,8 +104,6 @@ export default {
       arp: '- - Fmin4 . - - Fmin4 . - - Fmin4 . - - Fmin4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 . - - Bbmaj4 .',
       drums: o1 + ' ' + oFF,
     },
-    // B' - final chorus, lifts to Eb, ends on Bb (bVII)
-    // Ab | Bb
     D1: {
       lead: 'C6 . C6 . Eb6 . . . D6 . C6 . Ab5 . . . Bb5 . D6 . F6 . . . Eb6 . D6 . Bb5 . . .',
       harmony: 'Ab5 . Ab5 . C6 . . . Bb5 . Ab5 . F5 . . . G5 . Bb5 . D6 . . . C6 . Bb5 . G5 . . .',
@@ -131,7 +111,6 @@ export default {
       arp: 'Abmaj4 . . . . . . . . . . . . . . . Bbmaj4 . . . . . . . . . . . . . . .',
       drums: p1c + ' ' + p2,
     },
-    // Cm | Eb
     D2: {
       lead: 'Eb6 . Eb6 . G6 . . . F6 . Eb6 . C6 . . . Bb5 . C6 . D6 . Eb6 . G6 . . . . . . .',
       harmony: 'C6 . C6 . Eb6 . . . D6 . C6 . Ab5 . . . G5 . Ab5 . Bb5 . C6 . Eb6 . . . . . . .',
@@ -139,7 +118,6 @@ export default {
       arp: 'Cmin4 . . . . . . . . . . . . . . . Ebmaj4 . . . . . . . . . . . . . . .',
       drums: p2 + ' ' + p1,
     },
-    // Ab | Bb
     D3: {
       lead: '- - Ab5 . C6 . . . F6 . Eb6 . C6 . . . - - Bb5 . D6 . . . G6 . F6 . D6 . . .',
       harmony: '- - F5 . Ab5 . . . D6 . C6 . Ab5 . . . - - G5 . Bb5 . . . Eb6 . D6 . Bb5 . . .',
@@ -147,7 +125,6 @@ export default {
       arp: 'Abmaj4 . . . . . . . . . . . . . . . Bbmaj4 . . . . . . . . . . . . . . .',
       drums: p1 + ' ' + p2,
     },
-    // Gm | Bb
     D4: {
       lead: 'Bb5 . D6 . G6 . . . F6 . D6 . Bb5 . . . F5 . Bb5 . D6 . F6 . D6 . Bb5 . F5 . . .',
       harmony: 'G5 . Bb5 . Eb6 . . . D6 . Bb5 . G5 . . . D5 . G5 . Bb5 . D6 . Bb5 . G5 . D5 . . .',

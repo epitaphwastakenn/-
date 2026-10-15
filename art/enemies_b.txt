@@ -1,6 +1,4 @@
-# Enemies B: zone 4 (crypt) and zone 5 (volcanic abyss) + elites. All face right, 2-frame cycles.
 
-# ---------------------------------------------------------------- ZONE 4: Cripta Assombrada (purple-gray stone ground, light bones + bright accents)
 
 sprite en_skeleton
 keys: b=gray1 g=gray2 G=gray3 p=pink2
@@ -176,7 +174,6 @@ hhHGGGGgggggR
 ......bbb....
 end
 
-# ---------------------------------------------------------------- ZONE 5: Abismo Vulcanico (dark basalt + lava, warm brights, purples and whites)
 
 sprite en_imp
 keys: r=red3 l=red2 R=red4 p=purple3 P=purple4 q=purple2 n=pink2
@@ -358,7 +355,6 @@ Q...........Q
 .............
 end
 
-# ---------------------------------------------------------------- ELITES (mini-bosses, 2 frames each)
 
 sprite el_cursedpumpkin
 keys: o=orange3 l=orange2 O=orange4 d=orange5 D=brown5 y=yellow2 Y=yellow1 u=yellow3 h=purple4 c=purple5 C=purple6 b=purple3 X=purple1 F=purple2

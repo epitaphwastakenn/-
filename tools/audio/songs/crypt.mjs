@@ -1,6 +1,3 @@
-// Zone 4 "Cripta Assombrada" - spooky-cute A harmonic minor waltz in 3/4 (12-step bars), 126 bpm.
-// Form: A / A' / B (lament over A-G#-F-E) / C (tiptoe bridge) / D (return), 20 patterns of 24 steps.
-
 // VARIABLES
 const rest = '- - - - - - - - - - - -';
 const wC = 'kc . h . x . h . x . h .';
@@ -27,8 +24,6 @@ export default {
     drums: { volume: 0.32 },
   },
   patterns: {
-    // A  - hop-and-neighbour hook, finger-snap waltz
-    // Am | Am
     A1: {
       lead: 'A5 . . G#5 A5 . C6 . E6 . C6 . C6 . . . A5 . . . E5 . . .',
       harmony: rest + ' ' + rest,
@@ -36,7 +31,6 @@ export default {
       arp: '- - - - Amin4 . . . Amin4 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wC + ' ' + wA,
     },
-    // E7 | Am
     A2: {
       lead: 'B5 . . G#5 B5 . D6 . E6 . D6 . C6 . . . . . B5 . A5 . . .',
       harmony: rest + ' ' + '- - - - - - - - E5 . . .',
@@ -44,7 +38,6 @@ export default {
       arp: '- - - - E74 . . . E74 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wA + ' ' + wA,
     },
-    // Dm | Am
     A3: {
       lead: 'F5 . . E5 F5 . A5 . D6 . A5 . E6 . . . C6 . . . A5 . . .',
       harmony: rest + ' ' + rest,
@@ -52,7 +45,6 @@ export default {
       arp: '- - - - Dmin4 . . . Dmin4 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wB + ' ' + wA,
     },
-    // E7 | Am
     A4: {
       lead: 'B5 . . G#5 B5 . D6 . B5 . G#5 . A5 . . . . . . . - - - -',
       harmony: rest + ' ' + '- - - - E4 . . . . . . .',
@@ -60,8 +52,6 @@ export default {
       arp: '- - - - E74 . . . E74 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wA + ' ' + wF,
     },
-    // A' - hook again, pushes up through F and Dm
-    // Am | Am
     V1: {
       lead: 'A5 . . G#5 A5 . C6 . E6 . C6 . E6 . . . C6 . . . A5 . . .',
       harmony: 'E5 . . . . . . . . . . .' + ' ' + rest,
@@ -69,7 +59,6 @@ export default {
       arp: '- - - - Amin4 . . . Amin4 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wC + ' ' + wB,
     },
-    // E7 | Am
     V2: {
       lead: 'E6 . . D6 B5 . G#5 . B5 . D6 . A5 . . . . . C6 . E6 . . .',
       harmony: 'G#5 . . . . . . . . . . . E5 . . . . . . . . . . .',
@@ -77,7 +66,6 @@ export default {
       arp: '- - - - E74 . . . E74 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wB + ' ' + wB,
     },
-    // F | Dm
     V3: {
       lead: 'A5 . . G#5 A5 . C6 . F6 . C6 . D6 . . . A5 . . . F5 . . .',
       harmony: 'F5 . . . . . . . . . . . D5 . . . . . . . . . . .',
@@ -85,7 +73,6 @@ export default {
       arp: '- - - - Fmaj4 . . . Fmaj4 . . . - - - - Dmin4 . . . Dmin4 . . .',
       drums: wB + ' ' + wB,
     },
-    // E7 | Am
     V4: {
       lead: 'G#5 . B5 . D6 . E6 . D6 . B5 . A5 . . . . . . . . . . .',
       harmony: 'B4 . . . . . . . . . . . E5 . . . . . . . . . . .',
@@ -93,8 +80,6 @@ export default {
       arp: '- - - - E74 . . . E74 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wB + ' ' + wR,
     },
-    // B  - lyrical lament over the falling bass A G# F E
-    // Am | E7
     B1: {
       lead: 'A5 . . . . . C6 . E6 . . . D6 . . . . . B5 . G#5 . . .',
       harmony: 'E5 . . . . . . . . . . . B4 . . . . . . . . . . .',
@@ -102,7 +87,6 @@ export default {
       arp: '- - - - Amin4 . . . Amin4 . . . - - - - E74 . . . E74 . . .',
       drums: wA + ' ' + wA,
     },
-    // F | E7
     B2: {
       lead: 'A5 . . . . . C6 . A5 . . . B5 . . . . . G#5 . E5 . . .',
       harmony: 'C5 . . . . . . . . . . . G#4 . . . . . . . . . . .',
@@ -110,7 +94,6 @@ export default {
       arp: '- - - - Fmaj4 . . . Fmaj4 . . . - - - - E74 . . . E74 . . .',
       drums: wB + ' ' + wB,
     },
-    // Am | Dm
     B3: {
       lead: 'E6 . . . . . C6 . A5 . . . F5 . . . . . A5 . D6 . . .',
       harmony: 'C5 . . . . . . . . . . . A4 . . . . . . . . . . .',
@@ -118,7 +101,6 @@ export default {
       arp: '- - - - Amin4 . . . Amin4 . . . - - - - Dmin4 . . . Dmin4 . . .',
       drums: wA + ' ' + wB,
     },
-    // E7 | Am
     B4: {
       lead: 'D6 . . . . . B5 . G#5 . . . A5 . . . . . . . . . . .',
       harmony: 'B4 . . . . . . . . . . . E5 . . . . . . . . . . .',
@@ -126,8 +108,6 @@ export default {
       arp: '- - - - E74 . . . E74 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wB + ' ' + wF,
     },
-    // C  - tiptoe bridge: scale up, arpeggios down, build
-    // Am | Dm
     C1: {
       lead: 'A4 . - - B4 . - - C5 . - - D5 . - - E5 . - - F5 . - -',
       harmony: rest + ' ' + rest,
@@ -135,7 +115,6 @@ export default {
       arp: '- - - - - - - - - - - - - - - - - - - - - - - -',
       drums: wH1 + ' ' + wH1,
     },
-    // E7 | Am
     C2: {
       lead: 'G#5 . - - A5 . - - B5 . - - C6 . - - D6 . - - E6 . - -',
       harmony: rest + ' ' + rest,
@@ -143,7 +122,6 @@ export default {
       arp: '- - - - - - - - - - - - - - - - - - - - - - - -',
       drums: wH2 + ' ' + wH2,
     },
-    // F | Dm
     C3: {
       lead: 'C6 . - - A5 . - - F5 . - - D6 . - - A5 . - - F5 . - -',
       harmony: 'C5 . . . . . . . . . . . D5 . . . . . . . . . . .',
@@ -151,7 +129,6 @@ export default {
       arp: '- - - - Fmaj4 . . . - - - - - - - - Dmin4 . . . - - - -',
       drums: wH3 + ' ' + wH2,
     },
-    // E7 | E7
     C4: {
       lead: 'D6 . - - B5 . - - G#5 . - - E5 . G#5 . B5 . D6 . E6 . . .',
       harmony: 'B4 . . . . . . . . . . . B4 . . . . . . . - - - -',
@@ -159,8 +136,6 @@ export default {
       arp: '- - - - E74 . . . - - - - - - - - E74 . . . E74 . . .',
       drums: wBuild + ' ' + wBuild2,
     },
-    // D  - A'' full band, ends on the dominant
-    // Am | Am
     D1: {
       lead: 'A5 . . G#5 A5 . C6 . E6 . C6 . C6 . . . A5 . G#5 A5 E5 . . .',
       harmony: 'E5 . . . . . . . . . . . E5 . . . . . . . . . . .',
@@ -168,7 +143,6 @@ export default {
       arp: '- - - - Amin4 . . . Amin4 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wC + ' ' + wK,
     },
-    // E7 | Am
     D2: {
       lead: 'B5 . . G#5 B5 . D6 . E6 . D6 . C6 . . . . . B5 . A5 . G#5 A5',
       harmony: 'G#5 . . . . . . . . . . . E5 . . . . . . . . . . .',
@@ -176,7 +150,6 @@ export default {
       arp: '- - - - E74 . . . E74 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wK + ' ' + wK,
     },
-    // Dm | Am
     D3: {
       lead: 'F5 . . E5 F5 . A5 . D6 . A5 . E6 . D6 . C6 . B5 . A5 . . .',
       harmony: 'F5 . . . . . . . . . . . E5 . . . . . . . . . . .',
@@ -184,7 +157,6 @@ export default {
       arp: '- - - - Dmin4 . . . Dmin4 . . . - - - - Amin4 . . . Amin4 . . .',
       drums: wK + ' ' + wK,
     },
-    // E7 | E7
     D4: {
       lead: 'G#5 . B5 . D6 . E6 . D6 . B5 . B5 . . G#5 B5 . D6 . E6 . . .',
       harmony: 'B4 . . . . . . . . . . . E4 . . . . . . . . . . .',

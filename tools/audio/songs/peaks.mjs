@@ -1,6 +1,3 @@
-// Zone 3 "Picos Nevados" - icy E minor sprint, 142 bpm.
-// Form: A (hook) / A' (higher) / B (anthem) / C (icy breakdown) / D (return + chorus tag).
-
 // VARIABLES
 const k8c = 'kc . h . S . h . k . h k S . h .';
 const k8 = 'k . h . S . h . k . h . S . h .';
@@ -28,8 +25,6 @@ export default {
     drums: { volume: 0.31 },
   },
   patterns: {
-    // A  - hook sequence over Em C G D, then run and answer
-    // Em | C
     A1: {
       lead: 'E5 . B5 . . . A5 B5 E6 . . . . . D6 . C6 . G5 . . . F#5 G5 C6 . . . . . B5 .',
       bells: 'E5 G5 B5 E6 G6 E6 B5 G5 E5 B5 G5 E6 B5 G6 E6 B5 C5 E5 G5 C6 E6 C6 G5 E5 C5 G5 E5 C6 G5 E6 C6 G5',
@@ -37,7 +32,6 @@ export default {
       bass: 'E2 . E2 . E3 . E2 . E2 . E2 . E3 . E2 . C3 . C3 . C4 . C3 . C3 . C3 . C3 . D3 .',
       drums: k8c + ' ' + k8,
     },
-    // G | D
     A2: {
       lead: 'D6 . G5 . . . F#5 G5 B5 . . . . . A5 . A5 . D6 . . . C6 D6 F#6 . . . . . E6 .',
       bells: 'G5 B5 D6 G6 B6 G6 D6 B5 G5 D6 B5 G6 D6 B6 G6 D6 D5 F#5 A5 D6 F#6 D6 A5 F#5 D5 A5 F#5 D6 A5 F#6 D6 A5',
@@ -45,7 +39,6 @@ export default {
       bass: 'G2 . G2 . G3 . G2 . G2 . G2 . G3 . G2 . D3 . D3 . D4 . D3 . D3 . D3 . D3 . B2 .',
       drums: k8 + ' ' + k8f,
     },
-    // Em | C
     A3: {
       lead: 'E5 F#5 G5 A5 B5 C6 D6 - E6 . . . D6 . B5 . C6 . . . G5 . E5 . G5 . . . C6 . . .',
       bells: 'E5 G5 B5 E6 G6 E6 B5 G5 E5 B5 G5 E6 B5 G6 E6 B5 C5 E5 G5 C6 E6 C6 G5 E5 C5 G5 E5 C6 G5 E6 C6 G5',
@@ -53,7 +46,6 @@ export default {
       bass: 'E2 . E2 . E3 . E2 . E2 . E2 . E3 . E2 . C3 . C3 . C4 . C3 . C3 . C3 . C3 . A2 .',
       drums: k8 + ' ' + k8k,
     },
-    // Am | Bm7
     A4: {
       lead: 'A5 . C6 . E6 . . . D6 . . . C6 . B5 . B5 . . . A5 . F#5 . B5 . . . . . - -',
       bells: 'A4 C5 E5 A5 C6 A5 E5 C5 A4 E5 C5 A5 E5 C6 A5 E5 B4 D5 F#5 B5 D6 B5 F#5 D5 B4 F#5 D5 B5 F#5 D6 B5 F#5',
@@ -61,8 +53,6 @@ export default {
       bass: 'A2 . A2 . A3 . A2 . A2 . A2 . A3 . A2 . B2 . B2 . B3 . B2 . B2 . B2 . F#2 . B2 .',
       drums: k8 + ' ' + k8F,
     },
-    // A' - same changes, climbs higher
-    // Em | C
     V1: {
       lead: 'E5 . B5 . . . A5 B5 E6 . . . . . D6 . C6 . E6 . . . D6 E6 G6 . . . . . E6 .',
       bells: 'E5 G5 B5 E6 G6 E6 B5 G5 B5 E6 G6 E6 B5 G5 E5 G5 C5 G5 E5 C6 G5 E6 C6 G5 E6 C6 G5 C6 E5 G5 C5 E5',
@@ -70,7 +60,6 @@ export default {
       bass: 'E2 . E2 . E3 . E2 . E2 . E2 . E3 . E2 . C3 . C3 . C4 . C3 . C3 . C3 . C3 . D3 .',
       drums: k16c + ' ' + k16,
     },
-    // G | D
     V2: {
       lead: 'B5 . D6 . . . C6 D6 G6 . . . F#6 . E6 . D6 . . . A5 . F#5 . A5 . . . D6 . . .',
       bells: 'G5 B5 D6 G6 B6 G6 D6 B5 D6 G6 B6 G6 D6 B5 G5 B5 D5 A5 F#5 D6 A5 F#6 D6 A5 F#6 D6 A5 D6 F#5 A5 D5 F#5',
@@ -78,7 +67,6 @@ export default {
       bass: 'G2 . G2 . G3 . G2 . G2 . G2 . G3 . G2 . D3 . D3 . D4 . D3 . D3 . D3 . D3 . B2 .',
       drums: k16k + ' ' + k16f,
     },
-    // Em | D
     V3: {
       lead: 'E6 D6 C6 B5 A5 G5 F#5 - E5 . . . G5 . B5 . D5 . F#5 . A5 . D6 . F#6 . . . E6 . D6 .',
       bells: 'G6 E6 B5 E6 G5 B5 E5 G5 B5 E6 G6 E6 B5 G5 E5 G5 D5 F#5 A5 D6 F#6 D6 A5 F#5 D5 A5 F#5 D6 A5 F#6 D6 A5',
@@ -86,7 +74,6 @@ export default {
       bass: 'E2 . E2 . E3 . E2 . E2 . E2 . E3 . E2 . D3 . D3 . D4 . D3 . D3 . D3 . D3 . C3 .',
       drums: k16 + ' ' + k16k,
     },
-    // C | Bm7
     V4: {
       lead: 'C6 . B5 . A5 . G5 . E5 . . . G5 . . . B5 . . . A5 . F#5 . B5 . . . . . - -',
       bells: 'C5 G5 E5 C6 G5 E6 C6 G5 E6 C6 G5 C6 E5 G5 C5 E5 B4 D5 F#5 B5 D6 B5 F#5 D5 B4 F#5 D5 B5 F#5 D6 B5 F#5',
@@ -94,8 +81,6 @@ export default {
       bass: 'C3 . C3 . C4 . C3 . C3 . C3 . C4 . C3 . B2 . B2 . B3 . B2 . B2 . B2 . F#2 . B2 .',
       drums: k16 + ' ' + k16f,
     },
-    // B  - stuttering anthem and climax
-    // C | G
     B1: {
       lead: 'E6 . E6 . D6 . C6 . E6 . D6 . C6 . . . D6 . D6 . C6 . B5 . D6 . C6 . B5 . . .',
       bells: 'C5 G5 E5 C6 G5 E6 C6 G5 C5 E5 G5 C6 E6 C6 G5 E5 G5 D6 B5 G6 D6 B6 G6 D6 G5 B5 D6 G6 B6 G6 D6 B5',
@@ -103,7 +88,6 @@ export default {
       bass: 'C3 . C3 . C4 . C3 . C3 . C3 . C4 . C3 . G2 . G2 . G3 . G2 . G2 . G2 . G3 . G2 .',
       drums: k16c + ' ' + k16,
     },
-    // D | Em
     B2: {
       lead: 'A5 . A5 . B5 . A5 . F#5 . A5 . D6 . . . E6 . E6 . D6 . B5 . G5 . B5 . E6 . . .',
       bells: 'D5 A5 F#5 D6 A5 F#6 D6 A5 D5 F#5 A5 D6 F#6 D6 A5 F#5 E5 B5 G5 E6 B5 G6 E6 B5 E5 G5 B5 E6 G6 E6 B5 G5',
@@ -111,7 +95,6 @@ export default {
       bass: 'D3 . D3 . D4 . D3 . D3 . D3 . D4 . D3 . E2 . E2 . E3 . E2 . E2 . E2 . G2 . B2 .',
       drums: k16k + ' ' + k16f,
     },
-    // C | G
     B3: {
       lead: 'E6 . G6 . E6 . C6 . D6 . E6 . G6 . . . D6 . B5 . G5 . B5 . D6 . . . G6 . . .',
       bells: 'C5 E5 G5 C6 E6 C6 G5 E5 E6 C6 G5 C6 E5 G5 C5 E5 G5 B5 D6 G6 B6 G6 D6 B5 B6 G6 D6 G6 B5 D6 G5 B5',
@@ -119,7 +102,6 @@ export default {
       bass: 'C3 . C3 . C4 . C3 . C3 . C3 . C4 . C3 . G2 . G2 . G3 . G2 . G2 . G2 . G3 . G2 .',
       drums: k16 + ' ' + k16k,
     },
-    // Am | Bm7
     B4: {
       lead: 'E6 . C6 . A5 . C6 . E6 . . . D6 . C6 . B5 . . . A5 . F#5 . B5 . . . D6 . F#6 .',
       bells: 'A4 C5 E5 A5 C6 A5 E5 C5 C6 A5 E5 A5 C5 E5 A4 C5 B4 D5 F#5 B5 D6 B5 F#5 D5 D6 B5 F#5 B5 D5 F#5 B4 D5',
@@ -127,8 +109,6 @@ export default {
       bass: 'A2 . A2 . A3 . A2 . A2 . A2 . A3 . A2 . B2 . B2 . B3 . B2 . B2 . B2 . F#2 . B2 .',
       drums: k16 + ' ' + k16f,
     },
-    // C  - icy breakdown and snare-roll build
-    // Em | Em
     C1: {
       lead: 'B5 . . . . . . . . . . . . . . . G5 . . . . . . . B5 . . . . . . .',
       bells: 'B5 E6 G6 E6 B5 G5 E5 G5 B5 E6 G6 E6 B5 G5 E5 G5 E5 G5 B5 E6 G6 E6 B5 G5 B5 E6 G6 E6 B5 G5 E5 G5',
@@ -136,7 +116,6 @@ export default {
       bass: 'E2 . . . E2 . . . E2 . . . E2 . . . E2 . . . E2 . . . E2 . . . E2 . . .',
       drums: bC1 + ' ' + bC2,
     },
-    // C | D
     C2: {
       lead: 'E6 . . . . . . . D6 . . . . . . . F#6 . . . . . . . A5 . . . B5 . . .',
       bells: 'C5 E5 G5 C6 E6 C6 G5 E5 G5 C6 E6 C6 G5 E5 C5 E5 D5 F#5 A5 D6 F#6 D6 A5 F#5 A5 D6 F#6 D6 A5 F#5 D5 F#5',
@@ -144,8 +123,6 @@ export default {
       bass: 'C3 . . . C3 . . . C3 . . . C3 . . . D3 . . . D3 . . . D3 . D3 . A2 . . .',
       drums: bC3 + ' ' + bC4,
     },
-    // D  - return of the hook, chorus climax as the tag
-    // Em | C
     D1: {
       lead: 'E5 E5 B5 . . . A5 B5 E6 . . . . . D6 . C6 C6 G5 . . . F#5 G5 C6 . . . . . B5 .',
       bells: 'E5 G5 B5 E6 G6 E6 B5 G5 E5 B5 G5 E6 B5 G6 E6 B5 C5 E5 G5 C6 E6 C6 G5 E5 C5 G5 E5 C6 G5 E6 C6 G5',
@@ -153,7 +130,6 @@ export default {
       bass: 'E2 . E2 . E3 . E2 . E2 . E2 . E3 . E2 . C3 . C3 . C4 . C3 . C3 . C3 . C3 . D3 .',
       drums: k16c + ' ' + k16,
     },
-    // G | D
     D2: {
       lead: 'D6 D6 G5 . . . F#5 G5 B5 . . . . . A5 . A5 A5 D6 . . . C6 D6 F#6 . . . . . E6 .',
       bells: 'G5 B5 D6 G6 B6 G6 D6 B5 G5 D6 B5 G6 D6 B6 G6 D6 D5 F#5 A5 D6 F#6 D6 A5 F#5 D5 A5 F#5 D6 A5 F#6 D6 A5',
@@ -161,7 +137,6 @@ export default {
       bass: 'G2 . G2 . G3 . G2 . G2 . G2 . G3 . G2 . D3 . D3 . D4 . D3 . D3 . D3 . D3 . B2 .',
       drums: k16k + ' ' + k16f,
     },
-    // C | G
     D3: {
       lead: 'E6 E6 G6 . E6 . C6 . D6 . E6 . G6 . . . D6 D6 B5 . G5 . B5 . D6 . . . G6 . . .',
       bells: 'C5 E5 G5 C6 E6 C6 G5 E5 E6 C6 G5 C6 E5 G5 C5 E5 G5 B5 D6 G6 B6 G6 D6 B5 B6 G6 D6 G6 B5 D6 G5 B5',
@@ -169,7 +144,6 @@ export default {
       bass: 'C3 . C3 . C4 . C3 . C3 . C3 . C4 . C3 . G2 . G2 . G3 . G2 . G2 . G2 . G3 . G2 .',
       drums: k16 + ' ' + k16k,
     },
-    // Am | Bm7
     D4: {
       lead: 'E6 . C6 . A5 . C6 . E6 . . . D6 . C6 . B5 . . . A5 . F#5 . B5 . . . . . - -',
       bells: 'A4 C5 E5 A5 C6 A5 E5 C5 C6 A5 E5 A5 C5 E5 A4 C5 B4 D5 F#5 B5 D6 B5 F#5 D5 D6 B5 F#5 B5 D5 F#5 B4 D5',

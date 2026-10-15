@@ -1,6 +1,3 @@
-// Zone 2 "Bosque Sussurrante" - mysterious D dorian forest groove, 116 bpm, light swing.
-// Form: A (flute chant) / A' (ornamented) / B (rising line) / C (whispering tag, loops into A).
-
 // VARIABLES
 const gCr = 'kc b h b x b h b b k h b x b h b';
 const gA = 'k . h h x . h . . k h h x . h .';
@@ -29,8 +26,6 @@ export default {
     drums: { volume: 0.3 },
   },
   patterns: {
-    // A  - flute chant over a plucked Dm7 ostinato
-    // Dm7 | G7
     A1: {
       lead: 'A4 . D5 . . . F5 . A5 . . . . . G5 . B5 . . A5 G5 . . . D5 . . . . . E5 D5',
       harmony: 'D4 . . F4 . . A4 . C5 . A4 . F4 . D4 . G4 . . B4 . . D5 . F5 . D5 . B4 . G4 .',
@@ -38,7 +33,6 @@ export default {
       arp: 'Dm73 . . . . . . . . . . . . . . . G73 . . . . . . . . . . . . . . .',
       drums: gCr + ' ' + gA,
     },
-    // Dm7 | Am7
     A2: {
       lead: 'A4 . D5 . . . F5 . A5 . . . C6 . . . B5 . A5 . E5 . . . C5 . . . . . D5 C5',
       harmony: 'D4 . . F4 . . A4 . C5 . A4 . F4 . D4 . A4 . . C5 . . E5 . G5 . E5 . C5 . A4 .',
@@ -46,7 +40,6 @@ export default {
       arp: 'Dm73 . . . . . . . . . . . . . . . Am73 . . . . . . . . . . . . . . .',
       drums: gA + ' ' + gAf,
     },
-    // Dm7 | G7
     A3: {
       lead: 'A4 . D5 . F5 . A5 . C6 . . . A5 . . . B5 . . D6 B5 . G5 . A5 . . B5 G5 . . .',
       harmony: 'D4 . . F4 . . A4 . C5 . A4 . F4 . D4 . G4 . . B4 . . D5 . F5 . D5 . B4 . G4 .',
@@ -54,7 +47,6 @@ export default {
       arp: 'Dm73 . . . . . . . . . . . . . . . G73 . . . . . . . . . . . . . . .',
       drums: gA + ' ' + gA,
     },
-    // Fmaj7 | Cmaj7
     A4: {
       lead: 'A5 . . . . . G5 . F5 . . . E5 . . . G5 . . . E5 . . . C5 . . . . . D5 .',
       harmony: 'F4 . . A4 . . C5 . E5 . C5 . A4 . F4 . C4 . . E4 . . G4 . B4 . G4 . E4 . C4 .',
@@ -62,8 +54,6 @@ export default {
       arp: 'Fmaj3 . . . . . . . . . . . . . . . Cmaj3 . . . . . . . . . . . . . . .',
       drums: gA + ' ' + gAf,
     },
-    // A' - higher, ornamented, busier bass
-    // Dm7 | G7
     A5: {
       lead: 'A4 . D5 . F5 . A5 . D6 . . . C6 . A5 . B5 . . . G5 . B5 . D6 . . . . . E6 D6',
       harmony: 'C5 . . A4 . . F4 . D4 . F4 . A4 . C5 . G4 . . B4 . . D5 . F5 . D5 . B4 . G4 .',
@@ -71,7 +61,6 @@ export default {
       arp: 'Dm73 . . . . . . . . . . . . . . . G73 . . . . . . . . . . . . . . .',
       drums: gCr + ' ' + gB,
     },
-    // Dm7 | Am7
     A6: {
       lead: 'C6 . . A5 F5 . . . D5 . F5 . A5 . . . E6 . . . C6 . . . B5 . . . A5 . . .',
       harmony: 'C5 . . A4 . . F4 . D4 . F4 . A4 . C5 . A4 . . C5 . . E5 . G5 . E5 . C5 . A4 .',
@@ -79,7 +68,6 @@ export default {
       arp: 'Dm73 . . . . . . . . . . . . . . . Am73 . . . . . . . . . . . . . . .',
       drums: gB + ' ' + gBf,
     },
-    // Dm7 | G7
     A7: {
       lead: 'A4 . D5 . . . F5 . A5 . . . . . G5 . B5 . . A5 G5 . B5 . D6 . . . B5 . . .',
       harmony: 'C5 . . A4 . . F4 . D4 . F4 . A4 . C5 . G4 . . B4 . . D5 . F5 . D5 . B4 . G4 .',
@@ -87,7 +75,6 @@ export default {
       arp: 'Dm73 . . . . . . . . . . . . . . . G73 . . . . . . . . . . . . . . .',
       drums: gB + ' ' + gB,
     },
-    // Fmaj7 | Cmaj7
     A8: {
       lead: 'C6 . . . A5 . . . F5 . . . A5 . . . E5 . . . G5 . . . C6 . . . . . D6 C6',
       harmony: 'E5 . . C5 . . A4 . F4 . A4 . C5 . E5 . C4 . . E4 . . G4 . B4 . G4 . E4 . C4 .',
@@ -95,8 +82,6 @@ export default {
       arp: 'Fmaj3 . . . . . . . . . . . . . . . Cmaj3 . . . . . . . . . . . . . . .',
       drums: gB + ' ' + gBf,
     },
-    // B  - rising chord-tone line over Em7 F G Am
-    // Em7 | Fmaj7
     B1: {
       lead: 'G5 . . . . . E5 . B5 . . . . . . . A5 . . . G5 . F5 . C6 . . . . . . .',
       harmony: 'E4 . G4 . B4 . D5 . B4 . G4 . B4 . G4 . F4 . A4 . C5 . E5 . C5 . A4 . C5 . A4 .',
@@ -104,7 +89,6 @@ export default {
       arp: 'Em73 . . . . . . . . . . . . . . . Fmaj3 . . . . . . . . . . . . . . .',
       drums: gBldC + ' ' + gBld,
     },
-    // G | Am7
     B2: {
       lead: 'B5 . . . . . A5 . D6 . . . B5 . . . C6 . . . B5 . A5 . E6 . . . . . . .',
       harmony: 'G4 . B4 . D5 . G5 . D5 . B4 . D5 . B4 . A4 . C5 . E5 . G5 . E5 . C5 . E5 . C5 .',
@@ -112,7 +96,6 @@ export default {
       arp: 'Gmaj3 . . . . . . . . . . . . . . . Am73 . . . . . . . . . . . . . . .',
       drums: gC + ' ' + gC,
     },
-    // Em7 | Fmaj7
     B3: {
       lead: 'B5 . . . . . G5 . E5 . . . G5 . . . A5 . . . G5 . F5 . C5 . . . . . . .',
       harmony: 'E4 . G4 . B4 . D5 . B4 . G4 . B4 . G4 . F4 . A4 . C5 . E5 . C5 . A4 . C5 . A4 .',
@@ -120,7 +103,6 @@ export default {
       arp: 'Em73 . . . . . . . . . . . . . . . Fmaj3 . . . . . . . . . . . . . . .',
       drums: gBld + ' ' + gBld,
     },
-    // G | Cmaj7
     B4: {
       lead: 'G5 . . . . . D5 . B4 . . . D5 . . . E5 . . . . . G5 . C5 . . . . . - -',
       harmony: 'G4 . B4 . D5 . G5 . D5 . B4 . D5 . B4 . C4 . E4 . G4 . B4 . G4 . E4 . G4 . E4 .',
@@ -128,8 +110,6 @@ export default {
       arp: 'Gmaj3 . . . . . . . . . . . . . . . Cmaj3 . . . . . . . . . . . . . . .',
       drums: gC + ' ' + gCf,
     },
-    // C  - whispering tag back to the loop
-    // Dm7 | Dm7
     C1: {
       lead: 'D5 . . . . . . . . . E5 . F5 . . . A5 . . . . . . . G5 . . . F5 . . .',
       harmony: 'D4 . . . - - - - A4 . . . - - - - D4 . . . - - - - F4 . . . - - - -',
@@ -137,7 +117,6 @@ export default {
       arp: 'Dm73 . . . . . . . . . . . . . . . Dm73 . . . . . . . . . . . . . . .',
       drums: gT1 + ' ' + gQ,
     },
-    // Bdim | Cmaj7
     C2: {
       lead: 'D5 . . . . . . . F5 . . . . . . . E5 . . . . . . . . . . . - - - -',
       harmony: 'B3 . . . - - - - D4 . . . - - - - C4 . . . - - - - E4 . . . - - - -',

@@ -1,6 +1,4 @@
-# Purrvivors pickups and enemy bullets (default ink outline)
 
-# ---------------- PICKUPS: GEMS (same style as pk_gem_0 in reference.txt)
 sprite pk_gem_1
 keys: l=green1 g=green3 G=green4 d=green5
 frame
@@ -44,7 +42,6 @@ lrrrrrRRRd
 ....DD....
 end
 
-# ---------------- PICKUPS: COINS
 sprite pk_coin
 keys: Y=yellow2 y=yellow3 o=yellow4 F=yellow5
 frame
@@ -73,7 +70,6 @@ lbbbbooBbBd
 ..BBBBBdd..
 end
 
-# ---------------- PICKUPS: POWER-UPS (heal, magnet, yarn bomb, freeze clock)
 sprite pk_fish
 keys: l=orange2 o=orange3 O=orange4 b=brown4 w=cream W=white
 frame
@@ -134,7 +130,6 @@ lbbwwwwbBd
 ...BBdd...
 end
 
-# ---------------- PICKUPS: CHESTS (open versions share the exact front of the closed ones)
 sprite pk_chest
 keys: l=brown2 o=brown3 O=brown4 d=brown5 Y=yellow3 y=yellow2
 frame
@@ -207,7 +202,6 @@ YgYgYgYgYgYgYgYG
 dddddddddddddddd
 end
 
-# ---------------- PICKUPS: BLUEPRINT SCROLL
 sprite pk_scroll
 keys: W=white w=cream l=blue2 b=blue3 B=blue4 m=mint2 M=mint3 n=mint4
 frame
@@ -223,7 +217,6 @@ wBWw......
 .ww.......
 end
 
-# ---------------- ENEMY BULLETS (bright, high contrast; "pointing right" ones are rotated by the game)
 sprite sh_web
 keys: W=white g=gray2 G=gray3
 frame
